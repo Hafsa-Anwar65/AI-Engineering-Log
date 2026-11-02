@@ -16,6 +16,14 @@
 
 I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Systems student in Karachi. This repo is my public learning log: every day I learn one topic, write it in my own words and push code. Every skill on my CV gets rebuilt **from first principles**: Python, ML, computer vision, ROS 2, FastAPI, LangChain, LangGraph, RAG, n8n, Playwright, Docker, cloud and MLOps.
 
+## 🔥 Latest
+
+**Days completed:** 1 / 162
+
+| Day | Date | Topic | What I built | Code |
+|---|---|---|---|---|
+| Day 001 | Nov 1 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./week-01-python/Day%2001%20-%20Python%20Basics.py) |
+
 ## 🦾 Flagship: EscortBot Brain
 
 The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds one layer:
@@ -87,7 +95,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
 **📁 Folder:** [`week-01-python/`](./week-01-python/)
 
-- [ ] **Day 1** · Sun Nov 1 · 🚀 Kickoff: set up my lab + Python basics (variables, types, input/output, strings)
+- [x] **Day 1** · Sun Nov 1 · 🚀 Kickoff: set up my lab + Python basics (variables, types, input/output, strings)
 - [ ] **Day 2** · Mon Nov 2 · Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions
 - [ ] **Day 3** · Tue Nov 3 · Functions: args/kwargs, scope, lambdas; modules & imports; venv, pip/uv, requirements
 - [ ] **Day 4** · Wed Nov 4 · Files & errors: read/write files, JSON & CSV, try/except, custom exceptions, logging
