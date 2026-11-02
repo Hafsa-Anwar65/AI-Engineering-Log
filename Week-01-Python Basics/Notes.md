@@ -10,7 +10,7 @@ Day 2 · Day 3 · Day 4 · Day 5 · Day 6 · Day 7
 
 ## 📅 Day 1 · Variables, Types, Input/Output, Strings
 
-**Date:** Nov 2, 2026
+**Date:** Nov 1, 2026
 **Code:** [`Day 01 - Python Basics.py`](./Day%2001%20-%20Python%20Basics.py)
 
 ### 1. Variables & Data Types
@@ -110,6 +110,125 @@ print(f"Total: Rs {total:.2f}")   # 2 decimal places
 
 ---
 
+
 ## 📅 Day 2 · Control Flow & Data Structures
 
-_Coming next: if/elif/else, loops, lists, tuples, dicts, sets, comprehensions._
+**Date:** Nov 2, 2026
+**Code:** [`Day 02 - Control Flow.py`](./Day%2002%20-%20Control%20Flow.py)
+
+### 1. Conditions: if / elif / else
+
+#### Basic structure
+
+```python
+if temperature >= 35:
+    print("Very hot")
+elif temperature >= 25:
+    print("Warm")
+else:
+    print("Pleasant")
+```
+
+#### Combining conditions
+
+| Keyword | Meaning | Example |
+|---|---|---|
+| `and` | Both must be true | `is_weekend and not has_work` |
+| `or` | At least one is true | `day == "Sat" or day == "Sun"` |
+| `not` | Flips True/False | `not has_work` |
+
+> ⚠️ Indentation (4 spaces) decides what is inside the `if`.
+
+### 2. Loops
+
+#### `for` loop with `range()`
+
+| Code | Gives |
+|---|---|
+| `range(5)` | 0, 1, 2, 3, 4 |
+| `range(1, 6)` | 1, 2, 3, 4, 5 |
+| `range(10, 0, -3)` | 10, 7, 4, 1 |
+
+#### `while` loop
+
+Runs as long as the condition is true. Good for menus and "keep asking" programs.
+
+#### `break` and `continue`
+
+| Keyword | What it does |
+|---|---|
+| `break` | Stops the loop completely |
+| `continue` | Skips to the next round |
+
+#### `enumerate()`
+
+```python
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+```
+
+### 3. Data Structures
+
+#### Comparison
+
+| Type | Syntax | Ordered | Changeable | Duplicates | Use it for |
+|---|---|:-:|:-:|:-:|---|
+| List | `[1, 2, 3]` | ✅ | ✅ | ✅ | A collection that changes |
+| Tuple | `(1, 2)` | ✅ | ❌ | ✅ | Fixed groups, e.g. coordinates |
+| Dict | `{"a": 1}` | ✅ | ✅ | Keys unique | Looking things up by name |
+| Set | `{1, 2, 3}` | ❌ | ✅ | ❌ | Unique items, fast "is it in?" |
+
+#### List methods
+
+| Method | What it does |
+|---|---|
+| `append(x)` | Adds to the end |
+| `insert(i, x)` | Adds at position `i` |
+| `remove(x)` | Removes the first `x` |
+| `pop()` | Removes and returns the last item |
+| `sorted(lst)` | Returns a new sorted list |
+
+#### Dictionary basics
+
+```python
+student["age"] = 22                 # add or update
+student.get("email", "no email")   # safe lookup with a default
+for key, value in student.items():  # loop over pairs
+    ...
+```
+
+#### Set operations
+
+| Operator | Meaning | `{1,2,3,4}` and `{3,4,5}` |
+|---|---|---|
+| `\|` | Union | `{1, 2, 3, 4, 5}` |
+| `&` | Intersection | `{3, 4}` |
+| `-` | Difference | `{1, 2}` |
+
+### 4. Comprehensions
+
+One-line way to build a list, dict or set:
+
+```python
+squares = [n ** 2 for n in range(1, 6)]              # list
+evens   = [n for n in range(1, 11) if n % 2 == 0]    # list with a filter
+lengths = {w: len(w) for w in ["python", "ai"]}      # dict
+letters = {ch for ch in "banana"}                     # set
+```
+
+### 5. LeetCode
+
+| # | Problem | Key idea | File |
+|---|---|---|---|
+| 1 | Two Sum | Dictionary of seen numbers, one pass, O(n) | [`0001 - Two Sum.py`](../LeetCode/0001%20-%20Two%20Sum.py) |
+| 217 | Contains Duplicate | A set removes duplicates; compare lengths | [`0217 - Contains Duplicate.py`](../LeetCode/0217%20-%20Contains%20Duplicate.py) |
+
+### 🛠️ What I Built
+
+| Script | What it does | Concepts used |
+|---|---|---|
+| **Grade calculator** | Grades 5 subjects, finds the average and best subject | dict, `for`, `if/elif`, `max(key=...)` |
+| **Shopping list manager** | Menu to add, remove and show items | `while True`, `break`, list methods, `enumerate` |
+| **Word frequency counter** | Counts words in a paragraph, shows the top 5 | dict counting, `set`, `sorted(key=...)`, comprehension |
+
+---

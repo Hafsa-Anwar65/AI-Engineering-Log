@@ -18,10 +18,11 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 ## 🔥 Latest
 
-**Days completed:** 1 / 162
+**Days completed:** 2 / 162
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
+| Day 002 | Nov 2 | Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions | Grade calculator, shopping list manager, word frequency counter + 2 LeetCode | [`Day 02 - Control Flow.py`](./Week-01-Python%20Basics/Day%2002%20-%20Control%20Flow.py) |
 | Day 001 | Nov 1 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./Week-01-Python%20Basics/Day%2001%20-%20Python%20Basics.py) |
 
 ## 🦾 Flagship: EscortBot Brain
@@ -96,7 +97,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **📁 Folder:** [`Week-01-Python Basics/`](./Week-01-Python%20Basics/)
 
 - [x] **Day 1** · Sun Nov 1 · 🚀 Kickoff: set up my lab + Python basics (variables, types, input/output, strings)
-- [ ] **Day 2** · Mon Nov 2 · Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions
+- [x] **Day 2** · Mon Nov 2 · Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions
 - [ ] **Day 3** · Tue Nov 3 · Functions: args/kwargs, scope, lambdas; modules & imports; venv, pip/uv, requirements
 - [ ] **Day 4** · Wed Nov 4 · Files & errors: read/write files, JSON & CSV, try/except, custom exceptions, logging
 - [ ] **Day 5** · Thu Nov 5 · OOP: classes, __init__, methods, inheritance, composition, dataclasses, dunder methods
@@ -527,7 +528,7 @@ _Every Sunday: one screenshot or clip + one real number._
 AI-Engineering-Log/
 ├── README.md        ← you are here
 ├── LOG.md           ← one line a day
-├── leetcode/        ← 2 problems a day
+├── LeetCode/        ← 2 problems a day
 ├── Week-01-Python Basics/
 │   ├── Day 01 - Python Basics.py
 │   ├── Day 02 - Control Flow.py
