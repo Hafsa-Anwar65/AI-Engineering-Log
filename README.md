@@ -22,7 +22,7 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
-| Day 001 | Nov 1 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./week-01-python/Day%2001%20-%20Python%20Basics.py) |
+| Day 001 | Nov 1 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./Week-01-Python%20Basics/Day%2001%20-%20Python%20Basics.py) |
 
 ## 🦾 Flagship: EscortBot Brain
 
@@ -52,29 +52,29 @@ The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds
 
 | # | Week | Theme | Status |
 |:-:|---|---|:-:|
-| 1 | Nov 1-Nov 7 | 🐍 [Python from the basics](./week-01-python/) | 🟡 In progress |
-| 2 | Nov 8-Nov 14 | 📐 [NumPy, pandas & the math you actually use](./week-02-numpy-math/) | ⬜ |
-| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./week-03-sklearn/) | ⬜ |
-| 4 | Nov 22-Nov 28 | 🔥 [Neural networks & PyTorch basics](./week-04-pytorch/) | ⬜ |
-| 5 | Nov 29-Dec 6 | 👁️ [Computer vision & object detection](./week-05-computer-vision/) | ⬜ |
-| 6 | Dec 7-Dec 13 | 🤖 [ROS 2 for the AI brain](./week-06-ros2/) | ⬜ |
-| 7 | Dec 14-Dec 20 | ⚡ [FastAPI & Flask from the basics](./week-07-fastapi-flask/) | ⬜ |
-| 8 | Dec 21-Dec 27 | 🧬 [Transformers, embeddings & vector search (plain Python first)](./week-08-embeddings/) | ⬜ |
-| 9 | Dec 28-Jan 3 | 🔗 [LangChain from the basics](./week-09-langchain/) | ⬜ |
-| 10 | Jan 4-Jan 10 | 📚 [RAG done properly](./week-10-rag/) | ⬜ |
-| 11 | Jan 11-Jan 17 | 🕸️ [LangGraph from the basics](./week-11-langgraph/) | ⬜ |
-| 12 | Jan 18-Jan 24 | 🎙️ [Evals, voice & agent reliability](./week-12-evals-voice/) | ⬜ |
-| 13 | Jan 25-Jan 31 | 🎛️ [Fine-tuning small open models (on-robot model)](./week-13-finetuning/) | ⬜ |
-| 14 | Feb 1-Feb 7 | ⚙️ [n8n, Make & Playwright from the basics (+ SiteScout v1)](./week-14-n8n-playwright/) | ⬜ |
-| 15 | Feb 8-Feb 14 | 🐧 [Linux, Docker & Kubernetes from the basics](./week-15-linux-docker/) | ⬜ |
-| 16 | Feb 15-Feb 21 | ☁️ [Cloud fundamentals](./week-16-cloud/) | ⬜ |
-| 17 | Feb 22-Feb 28 | 🔁 [CI/CD & testing (ROS + AI)](./week-17-cicd/) | ⬜ |
-| 18 | Mar 1-Mar 7 | 📈 [Observability, latency, safety & security](./week-18-observability/) | ⬜ |
-| 19 | Mar 8-Mar 14 | 🏅 [Cloud AI certification](./week-19-certification/) | ⬜ |
-| 20 | Mar 15-Mar 21 | 💼 [CV, portfolio & demo video](./week-20-portfolio/) | ⬜ |
-| 21 | Mar 22-Mar 28 | 🏗️ [ML & LLM system design](./week-21-system-design/) | ⬜ |
-| 22 | Mar 29-Apr 4 | 🗣️ [Behavioral interviews & mocks](./week-22-behavioral/) | ⬜ |
-| 23 | Apr 5-Apr 11 | 🚀 [Applications at volume](./week-23-applications/) | ⬜ |
+| 1 | Nov 1-Nov 7 | 🐍 [Python from the basics](./Week-01-Python%20Basics/) | 🟡 In progress |
+| 2 | Nov 8-Nov 14 | 📐 [NumPy, pandas & the math you actually use](./Week-02-NumPy%20Pandas%20Math/) | ⬜ |
+| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./Week-03-Scikit-Learn%20ML/) | ⬜ |
+| 4 | Nov 22-Nov 28 | 🔥 [Neural networks & PyTorch basics](./Week-04-PyTorch%20Basics/) | ⬜ |
+| 5 | Nov 29-Dec 6 | 👁️ [Computer vision & object detection](./Week-05-Computer%20Vision/) | ⬜ |
+| 6 | Dec 7-Dec 13 | 🤖 [ROS 2 for the AI brain](./Week-06-ROS2%20Basics/) | ⬜ |
+| 7 | Dec 14-Dec 20 | ⚡ [FastAPI & Flask from the basics](./Week-07-FastAPI%20Flask/) | ⬜ |
+| 8 | Dec 21-Dec 27 | 🧬 [Transformers, embeddings & vector search (plain Python first)](./Week-08-Embeddings%20Vector%20Search/) | ⬜ |
+| 9 | Dec 28-Jan 3 | 🔗 [LangChain from the basics](./Week-09-LangChain%20Basics/) | ⬜ |
+| 10 | Jan 4-Jan 10 | 📚 [RAG done properly](./Week-10-RAG/) | ⬜ |
+| 11 | Jan 11-Jan 17 | 🕸️ [LangGraph from the basics](./Week-11-LangGraph%20Basics/) | ⬜ |
+| 12 | Jan 18-Jan 24 | 🎙️ [Evals, voice & agent reliability](./Week-12-Evals%20and%20Voice/) | ⬜ |
+| 13 | Jan 25-Jan 31 | 🎛️ [Fine-tuning small open models (on-robot model)](./Week-13-Fine-Tuning/) | ⬜ |
+| 14 | Feb 1-Feb 7 | ⚙️ [n8n, Make & Playwright from the basics (+ SiteScout v1)](./Week-14-n8n%20Make%20Playwright/) | ⬜ |
+| 15 | Feb 8-Feb 14 | 🐧 [Linux, Docker & Kubernetes from the basics](./Week-15-Linux%20Docker%20Kubernetes/) | ⬜ |
+| 16 | Feb 15-Feb 21 | ☁️ [Cloud fundamentals](./Week-16-Cloud%20Fundamentals/) | ⬜ |
+| 17 | Feb 22-Feb 28 | 🔁 [CI/CD & testing (ROS + AI)](./Week-17-CI-CD%20Testing/) | ⬜ |
+| 18 | Mar 1-Mar 7 | 📈 [Observability, latency, safety & security](./Week-18-Observability/) | ⬜ |
+| 19 | Mar 8-Mar 14 | 🏅 [Cloud AI certification](./Week-19-Cloud%20Certification/) | ⬜ |
+| 20 | Mar 15-Mar 21 | 💼 [CV, portfolio & demo video](./Week-20-Portfolio/) | ⬜ |
+| 21 | Mar 22-Mar 28 | 🏗️ [ML & LLM system design](./Week-21-System%20Design/) | ⬜ |
+| 22 | Mar 29-Apr 4 | 🗣️ [Behavioral interviews & mocks](./Week-22-Behavioral%20Interviews/) | ⬜ |
+| 23 | Apr 5-Apr 11 | 🚀 [Applications at volume](./Week-23-Applications/) | ⬜ |
 
 <sub>⬜ not started · 🟡 in progress · ✅ done · 🏁 gate passed</sub>
 
@@ -93,7 +93,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can write a small CLI program with classes, error handling, type hints and tests without looking things up  
 **📖 Resources:** Python official tutorial (docs.python.org/3/tutorial), Corey Schafer Python playlist (YouTube), 'Automate the Boring Stuff' (free online)  
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
-**📁 Folder:** [`week-01-python/`](./week-01-python/)
+**📁 Folder:** [`Week-01-Python Basics/`](./Week-01-Python%20Basics/)
 
 - [x] **Day 1** · Sun Nov 1 · 🚀 Kickoff: set up my lab + Python basics (variables, types, input/output, strings)
 - [ ] **Day 2** · Mon Nov 2 · Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions
@@ -111,7 +111,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can explain gradient descent on a whiteboard without notes  
 **📖 Resources:** 3Blue1Brown (Essence of Linear Algebra, Calculus), Andrew Ng ML Specialization C1 (audit free)  
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
-**📁 Folder:** [`week-02-numpy-math/`](./week-02-numpy-math/)
+**📁 Folder:** [`Week-02-NumPy Pandas Math/`](./Week-02-NumPy%20Pandas%20Math/)
 
 - [ ] **Day 8** · Sun Nov 8 · 🔁 Review Week 1 + NumPy arrays, dtype, shape, reshape, indexing
 - [ ] **Day 9** · Mon Nov 9 · NumPy broadcasting & vectorisation vs loops
@@ -129,7 +129,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can say why accuracy is misleading on imbalanced data  
 **📖 Resources:** Andrew Ng ML Specialization C2, scikit-learn user guide, Kaggle Learn (Intro/Intermediate ML)  
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
-**📁 Folder:** [`week-03-sklearn/`](./week-03-sklearn/)
+**📁 Folder:** [`Week-03-Scikit-Learn ML/`](./Week-03-Scikit-Learn%20ML/)
 
 - [ ] **Day 15** · Sun Nov 15 · 🔁 Review Week 2 + start the EscortBot data collection
 - [ ] **Day 16** · Mon Nov 16 · Supervised vs unsupervised; train/val/test splits & data leakage
@@ -147,7 +147,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can write a PyTorch training loop from memory  
 **📖 Resources:** Karpathy 'Neural Networks: Zero to Hero' (micrograd), official PyTorch tutorials  
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
-**📁 Folder:** [`week-04-pytorch/`](./week-04-pytorch/)
+**📁 Folder:** [`Week-04-PyTorch Basics/`](./Week-04-PyTorch%20Basics/)
 
 - [ ] **Day 22** · Sun Nov 22 · 🔁 Review Week 3 + Karpathy micrograd part 1 + label my camera frames
 - [ ] **Day 23** · Mon Nov 23 · Perceptron, neurons, layers, activations (ReLU, sigmoid, softmax)
@@ -165,7 +165,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** My own detector is fine-tuned and evaluated (mAP, per-class errors)  
 **📖 Resources:** fast.ai Practical Deep Learning lessons 1-2, torchvision transfer-learning tutorial, Ultralytics YOLO docs  
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
-**📁 Folder:** [`week-05-computer-vision/`](./week-05-computer-vision/)
+**📁 Folder:** [`Week-05-Computer Vision/`](./Week-05-Computer%20Vision/)
 
 - [ ] **Day 29** · Sun Nov 29 · 🔁 Review Week 4 + finish labels, make train/val split
 - [ ] **Day 30** · Mon Nov 30 · Convolutions, filters, pooling, feature maps, why CNNs work
@@ -184,7 +184,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** GATE 1: my detector runs as a ROS 2 node in Gazebo and the robot reaches waypoints from Python  
 **📖 Resources:** ROS 2 official tutorials (Humble or Jazzy, whatever my lab uses), Nav2 docs, Articulated Robotics (YouTube)  
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
-**📁 Folder:** [`week-06-ros2/`](./week-06-ros2/)
+**📁 Folder:** [`Week-06-ROS2 Basics/`](./Week-06-ROS2%20Basics/)
 
 - [ ] **Day 37** · Mon Dec 7 · ROS 2 from the basics: nodes, topics, publishers/subscribers in rclpy; workspaces, packages, colcon
 - [ ] **Day 38** · Tue Dec 8 · Services, actions, parameters, launch files; ros2 CLI, rqt, rosbag
@@ -205,7 +205,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can build a CRUD API with validation, a database and tests from scratch  
 **📖 Resources:** FastAPI official tutorial, Flask Quickstart + Miguel Grinberg's Flask Mega-Tutorial (first chapters), MDN 'HTTP overview'  
 **🧩 Coding practice:** LeetCode easy->medium: two pointers, sliding window, trees  
-**📁 Folder:** [`week-07-fastapi-flask/`](./week-07-fastapi-flask/)
+**📁 Folder:** [`Week-07-FastAPI Flask/`](./Week-07-FastAPI%20Flask/)
 
 - [ ] **Day 44** · Mon Dec 14 · How the web works: HTTP methods, status codes, headers, JSON, REST design; curl & Postman
 - [ ] **Day 45** · Tue Dec 15 · Flask basics: routes, request/response, templates, blueprints, a tiny API
@@ -223,7 +223,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can explain attention and embeddings in plain words  
 **📖 Resources:** Hugging Face LLM Course, Karpathy 'Let's build GPT', FAISS & Chroma docs  
 **🧩 Coding practice:** LeetCode easy->medium: two pointers, sliding window, trees  
-**📁 Folder:** [`week-08-embeddings/`](./week-08-embeddings/)
+**📁 Folder:** [`Week-08-Embeddings Vector Search/`](./Week-08-Embeddings%20Vector%20Search/)
 
 - [ ] **Day 51** · Mon Dec 21 · Tokens & BPE, context windows & cost; temperature, top-p, why models hallucinate
 - [ ] **Day 52** · Tue Dec 22 · Attention & the transformer (Q, K, V) at concept level
@@ -241,7 +241,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can rebuild any of my LLM scripts as LangChain chains and explain every piece  
 **📖 Resources:** LangChain official docs (Tutorials + How-to guides), DeepLearning.AI 'LangChain for LLM Application Development'  
 **🧩 Coding practice:** LeetCode easy->medium: two pointers, sliding window, trees  
-**📁 Folder:** [`week-09-langchain/`](./week-09-langchain/)
+**📁 Folder:** [`Week-09-LangChain Basics/`](./Week-09-LangChain%20Basics/)
 
 - [ ] **Day 58** · Mon Dec 28 · Why LangChain; chat models & messages, prompt templates, switching providers (OpenAI, Anthropic, Groq, Ollama)
 - [ ] **Day 59** · Tue Dec 29 · LCEL: Runnables, the | pipe, RunnableParallel, RunnablePassthrough, streaming & batch
@@ -259,7 +259,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** You have numbers for retrieval quality, not just demos  
 **📖 Resources:** DeepLearning.AI short courses (RAG), Chip Huyen 'AI Engineering'  
 **🧩 Coding practice:** LeetCode easy->medium: two pointers, sliding window, trees  
-**📁 Folder:** [`week-10-rag/`](./week-10-rag/)
+**📁 Folder:** [`Week-10-RAG/`](./Week-10-RAG/)
 
 - [ ] **Day 65** · Mon Jan 4 · Full RAG pipeline in LangChain (ingest, chunk, embed, retrieve, generate); compare with Week 8
 - [ ] **Day 66** · Tue Jan 5 · Retrieval metrics (recall@k, MRR, hit rate), finish my 50-question test set
@@ -277,7 +277,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can draw an agent graph on paper and build it in LangGraph with state, routing, memory and a human-approval step  
 **📖 Resources:** LangChain Academy 'Introduction to LangGraph' (free), LangGraph docs (concepts + tutorials)  
 **🧩 Coding practice:** LeetCode easy->medium: two pointers, sliding window, trees  
-**📁 Folder:** [`week-11-langgraph/`](./week-11-langgraph/)
+**📁 Folder:** [`Week-11-LangGraph Basics/`](./Week-11-LangGraph%20Basics/)
 
 - [ ] **Day 72** · Mon Jan 11 · Why graphs for agents; StateGraph, state (TypedDict, reducers), nodes, edges, START/END
 - [ ] **Day 73** · Tue Jan 12 · Conditional edges & routing, classify-then-branch (compare with my Week 3 classifier)
@@ -295,7 +295,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** My agent has a measured success rate on 30 scenarios  
 **📖 Resources:** LangSmith docs (datasets & experiments), faster-whisper & Piper TTS docs, MCP docs (modelcontextprotocol.io)  
 **🧩 Coding practice:** LeetCode easy->medium: two pointers, sliding window, trees  
-**📁 Folder:** [`week-12-evals-voice/`](./week-12-evals-voice/)
+**📁 Folder:** [`Week-12-Evals and Voice/`](./Week-12-Evals%20and%20Voice/)
 
 - [ ] **Day 79** · Mon Jan 18 · Evals: golden scenario sets, regression tests, LLM-as-judge (rubrics, biases)
 - [ ] **Day 80** · Tue Jan 19 · Structured outputs & agent reliability: validation, retries, max steps, timeouts, tool errors
@@ -313,7 +313,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** GATE 2: RAG eval of 50 with accuracy measured + agent success rate on 30 scenarios  
 **📖 Resources:** Hugging Face course (transformers, datasets, PEFT), Unsloth Colab notebooks, Ollama docs  
 **🧩 Coding practice:** LeetCode easy->medium: two pointers, sliding window, trees  
-**📁 Folder:** [`week-13-finetuning/`](./week-13-finetuning/)
+**📁 Folder:** [`Week-13-Fine-Tuning/`](./Week-13-Fine-Tuning/)
 
 - [ ] **Day 86** · Mon Jan 25 · When to fine-tune vs prompt vs RAG; Hugging Face transformers, datasets, hub
 - [ ] **Day 87** · Tue Jan 26 · SFT data format & data quality, build data for intent routing + short answers
@@ -334,7 +334,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can build an n8n workflow with webhook, branching, error handling and an AI node, and a Playwright suite with reliable locators  
 **📖 Resources:** n8n docs + n8n courses (Level 1 & 2), Make Academy, Playwright for Python docs  
 **🧩 Coding practice:** LeetCode medium: graphs, BFS/DFS, heaps  
-**📁 Folder:** [`week-14-n8n-playwright/`](./week-14-n8n-playwright/)
+**📁 Folder:** [`Week-14-n8n Make Playwright/`](./Week-14-n8n%20Make%20Playwright/)
 
 - [ ] **Day 93** · Mon Feb 1 · n8n basics: nodes, triggers (manual, schedule, webhook), credentials, expressions, items; self-host with Docker
 - [ ] **Day 94** · Tue Feb 2 · n8n deeper: IF/Switch, Merge, Loop Over Items, Code node, error workflows, sub-workflows, AI Agent node
@@ -352,7 +352,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can SSH into a fresh machine, containerise ROS 2 + the brain and run everything with compose  
 **📖 Resources:** Linux Journey (free), OverTheWire Bandit levels 0-15, Docker 'Get started', TechWorld with Nana (Docker, Kubernetes)  
 **🧩 Coding practice:** LeetCode medium: graphs, BFS/DFS, heaps  
-**📁 Folder:** [`week-15-linux-docker/`](./week-15-linux-docker/)
+**📁 Folder:** [`Week-15-Linux Docker Kubernetes/`](./Week-15-Linux%20Docker%20Kubernetes/)
 
 - [ ] **Day 100** · Mon Feb 8 · Linux CLI: filesystem, permissions, users, pipes & redirection, grep/find
 - [ ] **Day 101** · Tue Feb 9 · Linux for robots & servers: processes, systemd, journalctl, networking, SSH keys, bash scripts, cron
@@ -370,7 +370,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can deploy a container to the cloud from scratch in under an hour  
 **📖 Resources:** Microsoft Learn (Azure for Students) or AWS Skill Builder  
 **🧩 Coding practice:** LeetCode medium: graphs, BFS/DFS, heaps  
-**📁 Folder:** [`week-16-cloud/`](./week-16-cloud/)
+**📁 Folder:** [`Week-16-Cloud Fundamentals/`](./Week-16-Cloud%20Fundamentals/)
 
 - [ ] **Day 107** · Mon Feb 15 · Cloud account, regions, billing alerts FIRST, IAM & least privilege
 - [ ] **Day 108** · Tue Feb 16 · Compute: VMs, container services (Azure Container Apps / App Runner), serverless
@@ -388,7 +388,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** A broken prompt or a failing ROS test cannot reach production  
 **📖 Resources:** GitHub Actions docs, ros-tooling/setup-ros action, pytest docs  
 **🧩 Coding practice:** LeetCode medium: graphs, BFS/DFS, heaps  
-**📁 Folder:** [`week-17-cicd/`](./week-17-cicd/)
+**📁 Folder:** [`Week-17-CI-CD Testing/`](./Week-17-CI-CD%20Testing/)
 
 - [ ] **Day 114** · Mon Feb 22 · Git workflow (branches, PRs, review) + GitHub Actions: workflows, jobs, secrets, caching
 - [ ] **Day 115** · Tue Feb 23 · pytest: unit vs integration tests; mocking LLM calls; launch_testing for ROS 2 nodes
@@ -406,7 +406,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can state p95 response time, detector FPS and cost per conversation  
 **📖 Resources:** Langfuse / LangSmith docs, OWASP Top 10 for LLM apps  
 **🧩 Coding practice:** LeetCode medium: graphs, BFS/DFS, heaps  
-**📁 Folder:** [`week-18-observability/`](./week-18-observability/)
+**📁 Folder:** [`Week-18-Observability/`](./Week-18-Observability/)
 
 - [ ] **Day 121** · Mon Mar 1 · Latency budget for a robot: detector FPS, STT/LLM/TTS timings, p50/p95; structured logs & tracing
 - [ ] **Day 122** · Tue Mar 2 · Caching, streaming answers to TTS, retries with backoff, timeouts, model fallbacks
@@ -424,7 +424,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** GATE 3: Brain live on cloud with CI/CD, full robot demo in Gazebo; exam sat  
 **📖 Resources:** Microsoft Learn AI-102 path or AWS AI Practitioner on Skill Builder, ask MLSA/GDG for vouchers  
 **🧩 Coding practice:** LeetCode medium: graphs, BFS/DFS, heaps  
-**📁 Folder:** [`week-19-certification/`](./week-19-certification/)
+**📁 Folder:** [`Week-19-Cloud Certification/`](./Week-19-Cloud%20Certification/)
 
 - [ ] **Day 128** · Mon Mar 8 · Exam blueprint (AWS AI Practitioner or Azure AI-102); book the exam slot
 - [ ] **Day 129** · Tue Mar 9 · Responsible AI + service-selection questions
@@ -445,7 +445,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** A recruiter sees proof in 10 seconds  
 **📖 Resources:** My own repos, personal portfolio project, NeetCode 150  
 **🧩 Coding practice:** LeetCode medium, mixed topics, timed  
-**📁 Folder:** [`week-20-portfolio/`](./week-20-portfolio/)
+**📁 Folder:** [`Week-20-Portfolio/`](./Week-20-Portfolio/)
 
 - [ ] **Day 135** · Mon Mar 15 · CV v2 around EscortBot Brain + SiteScout, a number on every line; say clearly which parts are yours
 - [ ] **Day 136** · Tue Mar 16 · Impact bullets (problem → built → result); send CV to 2 engineers for review
@@ -463,7 +463,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can whiteboard a full system in 30 minutes  
 **📖 Resources:** Chip Huyen 'Designing Machine Learning Systems'  
 **🧩 Coding practice:** LeetCode medium, mixed topics, timed  
-**📁 Folder:** [`week-21-system-design/`](./week-21-system-design/)
+**📁 Folder:** [`Week-21-System Design/`](./Week-21-System%20Design/)
 
 - [ ] **Day 142** · Mon Mar 22 · Design framework: requirements, data, model, serving, evaluation, monitoring
 - [ ] **Day 143** · Tue Mar 23 · Design: RAG assistant for company documents
@@ -481,7 +481,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** I can tell each story in 2 minutes  
 **📖 Resources:** Pramp or peer mocks (MLSA, GDG, AI Baithak network)  
 **🧩 Coding practice:** LeetCode medium, mixed topics, timed  
-**📁 Folder:** [`week-22-behavioral/`](./week-22-behavioral/)
+**📁 Folder:** [`Week-22-Behavioral Interviews/`](./Week-22-Behavioral%20Interviews/)
 
 - [ ] **Day 149** · Mon Mar 29 · STAR method + write the EscortBot Brain story (team project, my part, the hardest bug)
 - [ ] **Day 150** · Tue Mar 30 · Stories: Lead Engine & Facebook Lead Intelligence System
@@ -499,7 +499,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🎯 Done when:** GATE 4: 40+ applications and 4+ mock interviews  
 **📖 Resources:** Application tracker (company, role, date, contact, status, follow-up)  
 **🧩 Coding practice:** LeetCode medium, mixed topics, timed  
-**📁 Folder:** [`week-23-applications/`](./week-23-applications/)
+**📁 Folder:** [`Week-23-Applications/`](./Week-23-Applications/)
 
 - [ ] **Day 156** · Mon Apr 5 · Target list: remote AI startups, robotics/embodied-AI companies, top Pakistani product companies; tracker
 - [ ] **Day 157** · Tue Apr 6 · Referrals: message 5 engineers + 2 tailored applications
@@ -528,12 +528,12 @@ AI-Engineering-Log/
 ├── README.md        ← you are here
 ├── LOG.md           ← one line a day
 ├── leetcode/        ← 2 problems a day
-├── week-01-python/
-│   ├── day001_basics.py
-│   ├── day002_control_flow.ipynb
+├── Week-01-Python Basics/
+│   ├── Day 01 - Python Basics.py
+│   ├── Day 02 - Control Flow.py
 │   ├── notes.md     ← key ideas in my own words
 │   └── project/     ← Saturday build
-└── week-02-numpy-math/ …
+└── Week-02-NumPy Pandas Math/ …
 ```
 
 ## 📏 Rules I follow
