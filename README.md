@@ -12,6 +12,27 @@
 
 ---
 
+## 🔥 Progress Streak
+
+<div align="center">
+
+![Streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-3%20days-FF6B35?style=for-the-badge) ![Best](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-3%20days-F7B32B?style=for-the-badge) ![Days](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-3%20%2F%20162-3B82F6?style=for-the-badge)
+
+**3 / 162 days** · 1% complete
+
+`█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
+
+| Week of | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Oct 26 |   |   |   |   |   |   | 🟩 |
+| Nov 2 | 🟩 | 🟩 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+
+<sub>🟩 done · ⬜ not yet · 🟥 missed</sub>
+
+</div>
+
+---
+
 ## 👋 About this log
 
 I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Systems student in Karachi. This repo is my public learning log: every day I learn one topic, write it in my own words and push code. Every skill on my CV gets rebuilt **from first principles**: Python, ML, computer vision, ROS 2, FastAPI, LangChain, LangGraph, RAG, n8n, Playwright, Docker, cloud and MLOps.
@@ -24,7 +45,7 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 |---|---|---|---|---|
 | Day 003 | Nov 3 | Functions, scope, lambdas, modules & imports, venv | Unit converter, password checker, text report + my first module (text_tools.py) | [`Day 03 - Functions.py`](./Week-01-Python%20Basics/Day%2003%20-%20Functions.py) |
 | Day 002 | Nov 2 | Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions | Grade calculator, shopping list manager, word frequency counter + 2 LeetCode | [`Day 02 - Control Flow.py`](./Week-01-Python%20Basics/Day%2002%20-%20Control%20Flow.py) |
-| Day 001 | Nov 1 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./Week-01-Python%20Basics/Day%2001%20-%20Python%20Basics.py) |
+| Day 001 | Nov 2 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./Week-01-Python%20Basics/Day%2001%20-%20Python%20Basics.py) |
 
 ## 🦾 Flagship: EscortBot Brain
 
