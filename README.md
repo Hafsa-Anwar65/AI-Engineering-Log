@@ -45,7 +45,7 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 |---|---|---|---|---|
 | Day 003 | Nov 3 | Functions, scope, lambdas, modules & imports, venv | Unit converter, password checker, text report + my first module (text_tools.py) | [`Day 03 - Functions.py`](./Week-01-Python%20Basics/Day%2003%20-%20Functions.py) |
 | Day 002 | Nov 2 | Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions | Grade calculator, shopping list manager, word frequency counter + 2 LeetCode | [`Day 02 - Control Flow.py`](./Week-01-Python%20Basics/Day%2002%20-%20Control%20Flow.py) |
-| Day 001 | Nov 2 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./Week-01-Python%20Basics/Day%2001%20-%20Python%20Basics.py) |
+| Day 001 | Nov 1 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./Week-01-Python%20Basics/Day%2001%20-%20Python%20Basics.py) |
 
 ## 🦾 Flagship: EscortBot Brain
 
