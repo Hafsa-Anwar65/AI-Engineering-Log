@@ -4,7 +4,11 @@
 
 **Days this week:**
 [Day 1](#-day-1--variables-types-inputoutput-strings) ·
-Day 2 · Day 3 · Day 4 · Day 5 · Day 6 · Day 7
+[Day 2](#-day-2--control-flow--data-structures) ·
+[Day 3](#-day-3--functions-modules--virtual-environments) ·
+[Day 4](#-day-4--files-json--csv-errors--logging) ·
+[Day 5](#-day-5--object-oriented-programming-oop) ·
+Day 6 · Day 7
 
 ---
 
@@ -109,7 +113,6 @@ print(f"Total: Rs {total:.2f}")   # 2 decimal places
 | **Text analyser** | Counts characters and words, reverses text, checks palindromes | `split()`, `len()`, slicing, `[::-1]` |
 
 ---
-
 
 ## 📅 Day 2 · Control Flow & Data Structures
 
@@ -348,3 +351,208 @@ Each project gets its own isolated set of packages, so versions from one project
 | **`text_tools.py`** | My first reusable module | docstrings, `if __name__ == "__main__"` |
 
 ---
+
+## 📅 Day 4 · Files, JSON & CSV, Errors & Logging
+
+**Date:** Nov 4, 2026
+**Code:** [`Day 04 - Files and Errors.py`](./Day%2004%20-%20Files%20and%20Errors.py)
+
+### 1. Reading & Writing Files
+
+#### File modes
+
+| Mode | Meaning |
+|---|---|
+| `"r"` | Read (default) |
+| `"w"` | Write, **overwrites** the file |
+| `"a"` | Append to the end |
+
+#### Always use `with`
+
+```python
+with open("notes.txt", "w", encoding="utf-8") as f:
+    f.write("Hello\n")
+```
+
+> 💡 `with` closes the file automatically, even if an error happens.
+
+#### pathlib
+
+```python
+from pathlib import Path
+p = Path("data") / "notes.txt"
+p.exists(), p.name, p.suffix, p.read_text()
+```
+
+### 2. JSON & CSV
+
+| Format | Looks like | Python tool |
+|---|---|---|
+| JSON | `{"name": "Ali", "age": 22}` | `json.dumps()` / `json.loads()` |
+| CSV | `date,category,amount` rows | `csv.DictReader` / `csv.DictWriter` |
+
+- JSON is for nested data (dicts and lists), like settings or API responses.
+- CSV is for tables, like spreadsheets.
+
+### 3. Handling Errors
+
+#### try / except / else / finally
+
+```python
+try:
+    number = int(value)
+except ValueError:
+    print("Not a number")
+else:
+    print("Worked!")         # only if no error
+finally:
+    print("Always runs")
+```
+
+#### Common errors
+
+| Error | When it happens |
+|---|---|
+| `ValueError` | Right type, wrong value, e.g. `int("abc")` |
+| `ZeroDivisionError` | Dividing by 0 |
+| `FileNotFoundError` | File doesn't exist |
+| `KeyError` | Dict key doesn't exist |
+| `json.JSONDecodeError` | Broken JSON |
+
+#### Raising errors & custom exceptions
+
+```python
+class InsufficientFundsError(Exception):
+    pass
+
+if amount > balance:
+    raise InsufficientFundsError("Not enough money")
+```
+
+> ⚠️ Catch specific errors. A bare `except:` hides real bugs.
+
+### 4. Logging
+
+Better than `print()` for real programs: messages have a level and a time, and can go to a file.
+
+| Level | Use for |
+|---|---|
+| `DEBUG` | Detailed info while developing |
+| `INFO` | Normal events ("saved 3 contacts") |
+| `WARNING` | Something odd but the program continues |
+| `ERROR` | Something failed |
+
+```python
+import logging
+logging.basicConfig(level=logging.INFO)
+log = logging.getLogger("app")
+log.info("Started")
+```
+
+### 🛠️ What I Built
+
+| Script | What it does | Concepts used |
+|---|---|---|
+| **Contact book** | Saves contacts in JSON, survives a missing or broken file | `json`, `pathlib`, `FileNotFoundError` |
+| **Expense report** | Totals expenses by category from a CSV, skips bad rows | `csv.DictReader`, `try/except`, `continue` |
+| **Bank withdrawal** | Blocks overdrafts with my own exception, logs everything | custom exception, `raise`, logging to a file |
+
+---
+
+## 📅 Day 5 · Object-Oriented Programming (OOP)
+
+**Date:** Nov 5, 2026
+**Code:** [`Day 05 - OOP.py`](./Day%2005%20-%20OOP.py)
+
+### 1. Classes & Objects
+
+A **class** is a blueprint; an **object** is one thing made from it.
+
+```python
+class Dog:
+    species = "Canis familiaris"     # class attribute (shared)
+
+    def __init__(self, name, age):   # runs when an object is created
+        self.name = name             # instance attributes (per object)
+        self.age = age
+
+    def bark(self):                  # method
+        return f"{self.name} says Woof!"
+
+tommy = Dog("Tommy", 3)
+```
+
+> 💡 `self` is the object itself: the "this one" the method is working on.
+
+### 2. Dunder Methods
+
+| Method | Makes this work |
+|---|---|
+| `__init__` | Creating an object |
+| `__str__` | `print(obj)` |
+| `__repr__` | How it shows in lists / the debugger |
+| `__add__` | `a + b` |
+| `__eq__` | `a == b` |
+| `__lt__` | `a < b` and `sorted()` |
+| `__len__` | `len(obj)` |
+
+### 3. The 4 Pillars of OOP
+
+| Pillar | Meaning | In my code |
+|---|---|---|
+| **Encapsulation** | Hide internal data, control access | `_balance` + `@property` |
+| **Inheritance** | A child class reuses a parent class | `SavingsAccount(BankAccount)` |
+| **Polymorphism** | Same method name, different behaviour | `speak()` for Cat vs Parrot, `area()` for shapes |
+| **Abstraction** | Show what it does, hide how | `Shape.area()` that every shape must define |
+
+#### Inheritance with `super()`
+
+```python
+class SavingsAccount(BankAccount):
+    def __init__(self, owner, balance, rate):
+        super().__init__(owner, balance)   # parent sets owner & balance
+        self.rate = rate
+```
+
+#### Inheritance vs composition
+
+| | Inheritance | Composition |
+|---|---|---|
+| Relation | **IS A** (a Cat is an Animal) | **HAS A** (a Library has Books) |
+| Example | `class Cat(Animal)` | `self.books = {}` inside `Library` |
+
+### 4. Properties, Class & Static Methods
+
+| Decorator | What it is | Example |
+|---|---|---|
+| `@property` | A method used like an attribute; can validate | `t.celsius = 30` |
+| `@classmethod` | Gets the class (`cls`), often another way to create objects | `Temperature.from_fahrenheit(98.6)` |
+| `@staticmethod` | Helper inside the class, no `self` | `Temperature.is_fever(38.5)` |
+
+### 5. Dataclasses
+
+Writes `__init__`, `__repr__` and `__eq__` for me:
+
+```python
+from dataclasses import dataclass, field
+
+@dataclass
+class Book:
+    title: str
+    pages: int
+    tags: list = field(default_factory=list)   # safe mutable default
+```
+
+### 🛠️ What I Built
+
+| Script | What it does | Concepts used |
+|---|---|---|
+| **Bank accounts** | Deposit, withdraw, history; savings account adds interest | encapsulation, `@property`, inheritance, `super()` |
+| **Library system** | Lend and return books to members | composition, dataclasses, `__len__` |
+| **Shapes** | Circle, rectangle, square sorted by area | polymorphism, `__lt__`, abstract `area()` |
+
+---
+
+## 📅 Day 6 · Modern Python
+
+_Coming next: type hints, iterators & generators, decorators, context managers, async/await._
