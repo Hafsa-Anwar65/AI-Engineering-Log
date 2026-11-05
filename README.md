@@ -14,22 +14,24 @@
 
 ## 🔥 Progress Streak
 
+<!-- STREAK:START -->
 <div align="center">
 
-![Streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-3%20days-FF6B35?style=for-the-badge) ![Best](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-3%20days-F7B32B?style=for-the-badge) ![Days](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-3%20%2F%20162-3B82F6?style=for-the-badge)
+![Streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-5%20days-FF6B35?style=for-the-badge) ![Best](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-5%20days-F7B32B?style=for-the-badge) ![Days](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-5%20%2F%20162-3B82F6?style=for-the-badge)
 
-**3 / 162 days** · 1% complete
+**5 / 162 days** · 3% complete
 
 `█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Week of | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Oct 26 |   |   |   |   |   |   | 🟩 |
-| Nov 2 | 🟩 | 🟩 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ | ⬜ | ⬜ |
 
-<sub>🟩 done · ⬜ not yet · 🟥 missed</sub>
+<sub>🟩 pushed · ⬜ not yet · 🟥 missed · updates automatically on every push</sub>
 
 </div>
+<!-- STREAK:END -->
 
 ---
 
@@ -39,10 +41,12 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 ## 🔥 Latest
 
-**Days completed:** 3 / 162
+**Days completed:** 5 / 162
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
+| Day 005 | Nov 5 | OOP: classes, inheritance, properties, dataclasses, dunder methods | Bank accounts, library system, shapes with polymorphism | [`Day 05 - OOP.py`](./Week-01-Python%20Basics/Day%2005%20-%20OOP.py) |
+| Day 004 | Nov 4 | Files, JSON & CSV, try/except, custom exceptions, logging | Contact book (JSON), expense report (CSV), bank withdrawal with a custom exception | [`Day 04 - Files and Errors.py`](./Week-01-Python%20Basics/Day%2004%20-%20Files%20and%20Errors.py) |
 | Day 003 | Nov 3 | Functions, scope, lambdas, modules & imports, venv | Unit converter, password checker, text report + my first module (text_tools.py) | [`Day 03 - Functions.py`](./Week-01-Python%20Basics/Day%2003%20-%20Functions.py) |
 | Day 002 | Nov 2 | Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions | Grade calculator, shopping list manager, word frequency counter + 2 LeetCode | [`Day 02 - Control Flow.py`](./Week-01-Python%20Basics/Day%2002%20-%20Control%20Flow.py) |
 | Day 001 | Nov 1 | Python basics: variables, types, input/output, strings | Profile card, bill splitter and text analyser | [`Day 01 - Python Basics.py`](./Week-01-Python%20Basics/Day%2001%20-%20Python%20Basics.py) |
@@ -121,8 +125,8 @@ Click a week to see the daily topics. I tick each day off as I push it.
 - [x] **Day 1** · Sun Nov 1 · 🚀 Kickoff: set up my lab + Python basics (variables, types, input/output, strings)
 - [x] **Day 2** · Mon Nov 2 · Control flow & data structures: if/loops, lists, tuples, dicts, sets, comprehensions
 - [x] **Day 3** · Tue Nov 3 · Functions: args/kwargs, scope, lambdas; modules & imports; venv, pip/uv, requirements
-- [ ] **Day 4** · Wed Nov 4 · Files & errors: read/write files, JSON & CSV, try/except, custom exceptions, logging
-- [ ] **Day 5** · Thu Nov 5 · OOP: classes, __init__, methods, inheritance, composition, dataclasses, dunder methods
+- [x] **Day 4** · Wed Nov 4 · Files & errors: read/write files, JSON & CSV, try/except, custom exceptions, logging
+- [x] **Day 5** · Thu Nov 5 · OOP: classes, __init__, methods, inheritance, composition, dataclasses, dunder methods
 - [ ] **Day 6** · Fri Nov 6 · Modern Python: type hints, iterators & generators, decorators, context managers, async/await basics
 - [ ] **Day 7** · Sat Nov 7 · 🛠️ **Build:** CLI bank-branch token & queue manager in pure Python
 
