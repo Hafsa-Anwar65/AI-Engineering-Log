@@ -17,26 +17,16 @@
 <!-- STREAK:START -->
 <div align="center">
 
-<<<<<<< HEAD
-![Streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-7%20days-FF6B35?style=for-the-badge) ![Best](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-7%20days-F7B32B?style=for-the-badge) ![Days](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-7%20%2F%20162-3B82F6?style=for-the-badge)
+![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-1%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-2%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-7%20%2F%20162-3B82F6?style=for-the-badge)
 
 **7 / 162 days** · 4% complete
-=======
-![Streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-5%20days-FF6B35?style=for-the-badge) ![Best](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-5%20days-F7B32B?style=for-the-badge) ![Days](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-5%20%2F%20162-3B82F6?style=for-the-badge)
-
-**5 / 162 days** · 3% complete
->>>>>>> 61e8b7850fa71311130e2abab5f3d0832718f66f
 
 `█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Week of | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Oct 26 |   |   |   |   |   |   | 🟩 |
-<<<<<<< HEAD
-| Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ |
-=======
-| Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ | ⬜ | ⬜ |
->>>>>>> 61e8b7850fa71311130e2abab5f3d0832718f66f
+| Oct 26 |   |   |   |   |   |   | 🟥 |
+| Nov 2 | 🟩 | 🟩 | 🟥 | 🟩 | 🟥 | 🟥 | 🟩 |
 
 <sub>🟩 pushed · ⬜ not yet · 🟥 missed · updates automatically on every push</sub>
 
