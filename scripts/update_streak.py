@@ -1,14 +1,14 @@
 """
-Updates the streak section in README.md from this repo's own commit history.
+Updates the streak section in README.md from my roadmap progress.
 Runs in GitHub Actions on every push and once a day.
 
-- A "streak day" is any day (Pakistan time) with at least one commit by me.
-- Bot commits (the ones this script makes) are ignored.
-- "Days done" counts the ticked days (- [x] **Day ...) in the README.
+- Day N of the roadmap is planned for Nov 1 + (N - 1) days.
+- A day counts as completed when it is ticked in the README: - [x] **Day N**
+- Current streak = completed days in a row, counting back from the latest planned day.
+- 🟥 = a planned day that has passed but isn't ticked yet.
 """
 import datetime as dt
 import re
-import subprocess
 from pathlib import Path
 from urllib.parse import quote
 
@@ -19,21 +19,14 @@ PKT = dt.timezone(dt.timedelta(hours=5))
 BEGIN, END = "<!-- STREAK:START -->", "<!-- STREAK:END -->"
 
 
-def commit_days() -> set:
-    out = subprocess.run(
-        ["git", "log", "--format=%an|%aI"], capture_output=True, text=True, check=True
-    ).stdout
-    days = set()
-    for line in out.splitlines():
-        author, stamp = line.split("|", 1)
-        if "[bot]" in author:
-            continue
-        days.add(dt.datetime.fromisoformat(stamp).astimezone(PKT).date())
-    return days
+def completed_days(text: str) -> set:
+    """Dates of the roadmap days that are ticked in the README."""
+    numbers = {int(n) for n in re.findall(r"- \[x\] \*\*Day (\d+)\*\*", text)}
+    return {START + dt.timedelta(days=n - 1) for n in numbers}
 
 
 def streaks(days: set, today: dt.date):
-    # current streak: count back from today (or from yesterday if today has no commit yet)
+    # current streak: count back from today (or yesterday if today isn't done yet)
     day = today if today in days else today - dt.timedelta(days=1)
     current = 0
     while day in days:
@@ -62,11 +55,11 @@ def calendar(days: set, today: dt.date) -> list:
         cells = []
         for i in range(7):
             d = monday + dt.timedelta(days=i)
-            if d < START or d > today:
-                cells.append(" " if d < START else "⬜")
+            if d < START:
+                cells.append(" ")
             elif d in days:
                 cells.append("🟩")
-            elif d == today:
+            elif d >= today:
                 cells.append("⬜")
             else:
                 cells.append("🟥")
@@ -78,9 +71,9 @@ def calendar(days: set, today: dt.date) -> list:
 def main():
     text = README.read_text(encoding="utf-8")
     today = dt.datetime.now(PKT).date()
-    days = {d for d in commit_days() if d >= START}
+    days = completed_days(text)
     current, best = streaks(days, today)
-    done = len(re.findall(r"- \[x\] \*\*Day \d+", text))
+    done = len(days)
     filled = round(done / TOTAL_DAYS * 30)
 
     block = [
@@ -99,7 +92,7 @@ def main():
         "",
         *calendar(days, today),
         "",
-        "<sub>🟩 pushed · ⬜ not yet · 🟥 missed · updates automatically on every push</sub>",
+        "<sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>",
         "",
         "</div>",
         END,

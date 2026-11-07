@@ -9,8 +9,5 @@ One line a day: what I learned and what I built.
 | 003 | Nov 3, 2026 | Functions, scope, lambdas, modules & imports, venv | Unit converter, password checker, text report, text_tools module | [Day 03 - Functions.py](./Week-01-Python%20Basics/Day%2003%20-%20Functions.py) |
 | 004 | Nov 4, 2026 | Files, JSON & CSV, errors, custom exceptions, logging | Contact book (JSON), expense report (CSV), bank withdrawal with custom exception | [Day 04 - Files and Errors.py](./Week-01-Python%20Basics/Day%2004%20-%20Files%20and%20Errors.py) |
 | 005 | Nov 5, 2026 | OOP: classes, inheritance, properties, dataclasses, dunder methods | Bank accounts, library system, shapes | [Day 05 - OOP.py](./Week-01-Python%20Basics/Day%2005%20-%20OOP.py) |
-<<<<<<< HEAD
 | 006 | Nov 6, 2026 | Modern Python: type hints, generators, decorators, context managers, async/await | Countdown iterator, Fibonacci generator, @timer & @retry, async downloads | [Day 06 - Modern Python.py](./Week-01-Python%20Basics/Day%2006%20-%20Modern%20Python.py) |
 | 007 | Nov 7, 2026 | 🛠️ Week 1 project | Expense Tracker CLI with 9 pytest tests | [Day 07 - Expense Tracker Project](./Week-01-Python%20Basics/Day%2007%20-%20Expense%20Tracker%20Project/) |
-=======
->>>>>>> 61e8b7850fa71311130e2abab5f3d0832718f66f
