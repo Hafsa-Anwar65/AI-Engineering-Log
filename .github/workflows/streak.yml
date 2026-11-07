@@ -1,0 +1,39 @@
+name: Update progress streak
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "5 19 * * *"   # every day at 00:05 Pakistan time
+  workflow_dispatch:         # lets me run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  streak:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0       # full history, needed to count commit days
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update streak section
+        run: python scripts/update_streak.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "Nothing to commit"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: update progress streak [skip ci]"
+            git push
+          fi

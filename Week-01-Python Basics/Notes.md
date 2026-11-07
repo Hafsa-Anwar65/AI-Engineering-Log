@@ -8,8 +8,12 @@
 [Day 3](#-day-3--functions-modules--virtual-environments) ·
 [Day 4](#-day-4--files-json--csv-errors--logging) ·
 [Day 5](#-day-5--object-oriented-programming-oop) ·
+<<<<<<< HEAD
 [Day 6](#-day-6--modern-python) ·
 [Day 7](#-day-7--%EF%B8%8F-week-1-project-expense-tracker)
+=======
+Day 6 · Day 7
+>>>>>>> 61e8b7850fa71311130e2abab5f3d0832718f66f
 
 ---
 
@@ -556,6 +560,7 @@ class Book:
 
 ## 📅 Day 6 · Modern Python
 
+<<<<<<< HEAD
 **Date:** Nov 6, 2026
 **Code:** [`Day 06 - Modern Python.py`](./Day%2006%20-%20Modern%20Python.py)
 
@@ -709,3 +714,6 @@ python -m pytest -v      # 9 passed ✅
 ---
 
 # ✅ Week 1 complete
+=======
+_Coming next: type hints, iterators & generators, decorators, context managers, async/await._
+>>>>>>> 61e8b7850fa71311130e2abab5f3d0832718f66f
