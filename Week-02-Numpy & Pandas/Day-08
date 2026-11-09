@@ -1,0 +1,143 @@
+import numpy as np
+
+# ==========================================
+# DAY 8: NUMPY FUNDAMENTALS
+# ==========================================
+
+# 1. Creating NumPy Arrays
+
+print("1. Creating Arrays")
+
+numbers = np.array([10, 20, 30, 40, 50])
+
+print("Array:", numbers)
+print("Type:", type(numbers))
+
+
+# 2. Understanding Array Properties
+
+print("\n2. Array Properties")
+
+print("Data Type:", numbers.dtype)
+print("Shape:", numbers.shape)
+print("Dimensions:", numbers.ndim)
+print("Total Elements:", numbers.size)
+
+
+# 3. Creating 2D Arrays
+
+print("\n3. Two-Dimensional Arrays")
+
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(matrix)
+print("Shape:", matrix.shape)
+print("Dimensions:", matrix.ndim)
+
+
+# 4. Reshaping Arrays
+
+print("\n4. Reshaping Arrays")
+
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+reshaped = arr.reshape(2, 3)
+
+print("Original Array:", arr)
+print("Reshaped Array:\n", reshaped)
+
+
+# 5. Indexing and Slicing
+
+print("\n5. Indexing and Slicing")
+
+values = np.array([10, 20, 30, 40, 50])
+
+print("First Element:", values[0])
+print("Last Element:", values[-1])
+print("Elements from index 1 to 3:", values[1:4])
+print("First Three Elements:", values[:3])
+
+
+# 6. Accessing Elements in 2D Arrays
+
+print("\n6. 2D Array Indexing")
+
+print("First Row:", matrix[0])
+print("Second Element of First Row:", matrix[0, 1])
+print("First Column:", matrix[:, 0])
+
+
+# 7. Mathematical Operations
+
+print("\n7. Mathematical Operations")
+
+a = np.array([10, 20, 30])
+b = np.array([1, 2, 3])
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+
+print("Adding 5 to every element:", a + 5)
+
+
+# 8. Statistical Operations
+
+print("\n8. Statistical Operations")
+
+scores = np.array([70, 80, 90, 85, 95])
+
+print("Scores:", scores)
+print("Sum:", np.sum(scores))
+print("Mean:", np.mean(scores))
+print("Maximum:", np.max(scores))
+print("Minimum:", np.min(scores))
+print("Standard Deviation:", np.std(scores))
+
+
+# 9. Boolean Filtering
+
+print("\n9. Boolean Filtering")
+
+marks = np.array([45, 67, 82, 39, 91, 74])
+
+passed = marks[marks >= 50]
+
+print("All Marks:", marks)
+print("Passed Marks:", passed)
+
+
+# 10. Mini Practical Example
+
+print("\n10. Student Performance Analysis")
+
+student_marks = np.array([
+    [80, 75, 90],
+    [65, 70, 72],
+    [95, 92, 98],
+    [45, 55, 60]
+])
+
+print("Student Marks:\n", student_marks)
+
+# Average marks of each student
+student_average = np.mean(student_marks, axis=1)
+
+# Average marks of each subject
+subject_average = np.mean(student_marks, axis=0)
+
+print("Student Averages:", student_average)
+print("Subject Averages:", subject_average)
+
+print("Highest Average:", np.max(student_average))
+
+
+# ==========================================
+# END OF DAY 8
+# ==========================================
