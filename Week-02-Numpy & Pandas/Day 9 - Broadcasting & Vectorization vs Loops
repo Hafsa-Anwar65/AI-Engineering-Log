@@ -1,0 +1,33 @@
+# ============================================================
+# DAY 9 — Broadcasting & Vectorization vs Loops
+# ============================================================
+
+print("\n========== DAY 9 ==========")
+
+numbers = np.array([1, 2, 3, 4, 5])
+
+# Vectorization
+print("Original:", numbers)
+print("Multiply by 2:", numbers * 2)
+print("Add 10:", numbers + 10)
+print("Square:", numbers ** 2)
+
+# Broadcasting
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+vector = np.array([10, 20, 30])
+
+print("\nBroadcasting:")
+print(matrix + vector)
+
+# Loop comparison
+result_loop = []
+
+for num in numbers:
+    result_loop.append(num * 2)
+
+print("\nUsing Loop:", result_loop)
+print("Using NumPy:", numbers * 2)
