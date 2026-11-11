@@ -1,0 +1,104 @@
+
+    print("Vector:", vector)
+    print("Magnitude:", magnitude)
+
+
+def dot_product_section():
+    print("\n3. DOT PRODUCT")
+    vector_a = np.array([2, 3])
+    vector_b = np.array([4, 5])
+
+    # (2 * 4) + (3 * 5) = 23
+    result = np.dot(vector_a, vector_b)
+
+    print("Vector A:", vector_a)
+    print("Vector B:", vector_b)
+    print("Dot product:", result)
+
+
+def matrices_section():
+    print("\n4. MATRICES")
+    matrix = np.array([
+        [1, 2, 3],
+        [4, 5, 6]
+    ])
+
+    print("Matrix:\n", matrix)
+    print("Shape (rows, columns):", matrix.shape)
+    print("Dimensions:", matrix.ndim)
+    print("Total elements:", matrix.size)
+    print("First row:", matrix[0])
+    print("Element at row 1, column 2:", matrix[1, 2])
+
+
+def matrix_multiplication_section():
+    print("\n5. MATRIX MULTIPLICATION")
+    matrix_a = np.array([
+        [1, 2],
+        [3, 4]
+    ])
+    matrix_b = np.array([
+        [5, 6],
+        [7, 8]
+    ])
+
+    result = np.matmul(matrix_a, matrix_b)
+
+    print("Matrix A:\n", matrix_a)
+    print("Matrix B:\n", matrix_b)
+    print("A multiplied by B:\n", result)
+    print("Result shape:", result.shape)
+
+    # Shape rule: (m x n) @ (n x p) = (m x p)
+
+
+def element_wise_operations_section():
+    print("\n6. ELEMENT-WISE OPERATIONS")
+    array_a = np.array([10, 20, 30])
+    array_b = np.array([1, 2, 3])
+
+    print("A + B:", array_a + array_b)
+    print("A - B:", array_a - array_b)
+    print("A * B:", array_a * array_b)
+    print("A / B:", array_a / array_b)
+
+
+def transpose_section():
+    print("\n7. MATRIX TRANSPOSE")
+    matrix = np.array([
+        [1, 2, 3],
+        [4, 5, 6]
+    ])
+
+    transposed = matrix.T
+
+    print("Original matrix:\n", matrix)
+    print("Original shape:", matrix.shape)
+    print("Transposed matrix:\n", transposed)
+    print("Transposed shape:", transposed.shape)
+
+
+def practice_tasks():
+    print("\n8. PRACTICE TASKS")
+    print("1. Create [6, 8] and calculate its magnitude.")
+    print("2. Find the dot product of two 3-element vectors.")
+    print("3. Create a 2x3 matrix and print its shape.")
+    print("4. Transpose the 2x3 matrix.")
+    print("5. Multiply a 2x3 matrix by a compatible 3x2 matrix.")
+    print("6. Modify the values and predict the output.")
+
+
+def main():
+    vectors_section()
+    magnitude_section()
+    dot_product_section()
+    matrices_section()
+    matrix_multiplication_section()
+    element_wise_operations_section()
+    transpose_section()
+    practice_tasks()
+    print("\nDay 11 practice completed. Keep experimenting!")
+
+
+if __name__ == "__main__":
+    main()
