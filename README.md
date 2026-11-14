@@ -17,16 +17,17 @@
 <!-- STREAK:START -->
 <div align="center">
 
-![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-7%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-7%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-7%20%2F%20162-3B82F6?style=for-the-badge)
+![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-14%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-14%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-14%20%2F%20162-3B82F6?style=for-the-badge)
 
-**7 / 162 days** · 4% complete
+**14 / 162 days** · 8% complete
 
-`█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Week of | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Oct 26 |   |   |   |   |   |   | 🟩 |
-| Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ |
+| Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ |
 
 <sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>
 
@@ -41,15 +42,19 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 ## 🔥 Latest
 
-**Days completed:** 7 / 162
+**Days completed:** 14 / 162
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
-| Day 007 | Nov 7 | 🛠️ Week 1 project | Expense Tracker CLI: classes, JSON storage, custom errors, generators, decorator, 9 pytest tests | [`expense_tracker.py`](./Week-01-Python%20Basics/Day%2007%20-%20Expense%20Tracker%20Project/expense_tracker.py) |
-| Day 006 | Nov 6 | Modern Python: type hints, generators, decorators, context managers, async/await | Countdown iterator, Fibonacci generator, @timer and @retry decorators, async downloads | [`Day 06 - Modern Python.py`](./Week-01-Python%20Basics/Day%2006%20-%20Modern%20Python.py) |
-| Day 005 | Nov 5 | OOP: classes, inheritance, properties, dataclasses, dunder methods | Bank accounts, library system, shapes with polymorphism | [`Day 05 - OOP.py`](./Week-01-Python%20Basics/Day%2005%20-%20OOP.py) |
-| Day 004 | Nov 4 | Files, JSON & CSV, try/except, custom exceptions, logging | Contact book (JSON), expense report (CSV), bank withdrawal with a custom exception | [`Day 04 - Files and Errors.py`](./Week-01-Python%20Basics/Day%2004%20-%20Files%20and%20Errors.py) |
-| Day 003 | Nov 3 | Functions, scope, lambdas, modules & imports, venv | Unit converter, password checker, text report + my first module (text_tools.py) | [`Day 03 - Functions.py`](./Week-01-Python%20Basics/Day%2003%20-%20Functions.py) |
+| Day 014 | Nov 14 | 🛠️ Week 2 project | Linear regression from scratch in NumPy: R² 0.95, matches np.polyfit, 7 tests | [`linear_regression.py`](./Week-02-NumPy%20Pandas%20Math/Day%2014%20-%20Linear%20Regression%20Project/linear_regression.py) |
+| Day 013 | Nov 13 | Loss functions (MSE) & gradient descent | MSE vs MAE, gradient descent, learning-rate experiments | [`Day 13 - Loss Functions and Gradient Descent.py`](./Week-02-NumPy%20Pandas%20Math/Day%2013%20-%20Loss%20Functions%20and%20Gradient%20Descent.py) |
+| Day 012 | Nov 12 | Derivatives, chain rule, gradients + probability | Numerical derivatives, gradients, conditional probability | [`Day 12 - Derivatives Gradients and Probability.py`](./Week-02-NumPy%20Pandas%20Math/Day%2012%20-%20Derivatives%20Gradients%20and%20Probability.py) |
+| Day 011 | Nov 11 | Linear algebra: vectors, dot product, matrix multiplication | Vectors, magnitude, matmul, transpose practice | [`Day 11 - Linear Algebra.py`](./Week-02-NumPy%20Pandas%20Math/Day%2011%20-%20Linear%20Algebra.py) |
+| Day 010 | Nov 10 | pandas: CSVs, filtering, groupby, merges, missing values | Student data cleaning, groupby averages, merge | [`Day 10 - Pandas.py`](./Week-02-NumPy%20Pandas%20Math/Day%2010%20-%20Pandas.py) |
+| Day 009 | Nov 9 | Broadcasting & vectorisation vs loops | Speed test: NumPy ~24x faster than a loop on 1M numbers | [`Day 09 - Broadcasting and Vectorization.py`](./Week-02-NumPy%20Pandas%20Math/Day%2009%20-%20Broadcasting%20and%20Vectorization.py) |
+| Day 008 | Nov 8 | NumPy arrays: dtype, shape, reshape, indexing | Array and matrix practice | [`Day 08 - NumPy Arrays.py`](./Week-02-NumPy%20Pandas%20Math/Day%2008%20-%20NumPy%20Arrays.py) |
+
+📒 Full day-by-day history: [LOG.md](./LOG.md)
 
 ## 🦾 Flagship: EscortBot Brain
 
@@ -80,8 +85,8 @@ The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds
 | # | Week | Theme | Status |
 |:-:|---|---|:-:|
 | 1 | Nov 1-Nov 7 | 🐍 [Python from the basics](./Week-01-Python%20Basics/) | ✅ Done |
-| 2 | Nov 8-Nov 14 | 📐 [NumPy, pandas & the math you actually use](./Week-02-NumPy%20Pandas%20Math/) | 🟡 Next |
-| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./Week-03-Scikit-Learn%20ML/) | ⬜ |
+| 2 | Nov 8-Nov 14 | 📐 [NumPy, pandas & the math you actually use](./Week-02-NumPy%20Pandas%20Math/) | ✅ Done |
+| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./Week-03-Scikit-Learn%20ML/) | 🟡 Next |
 | 4 | Nov 22-Nov 28 | 🔥 [Neural networks & PyTorch basics](./Week-04-PyTorch%20Basics/) | ⬜ |
 | 5 | Nov 29-Dec 6 | 👁️ [Computer vision & object detection](./Week-05-Computer%20Vision/) | ⬜ |
 | 6 | Dec 7-Dec 13 | 🤖 [ROS 2 for the AI brain](./Week-06-ROS2%20Basics/) | ⬜ |
@@ -140,13 +145,13 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
 **📁 Folder:** [`Week-02-NumPy Pandas Math/`](./Week-02-NumPy%20Pandas%20Math/)
 
-- [ ] **Day 8** · Sun Nov 8 · 🔁 Review Week 1 + NumPy arrays, dtype, shape, reshape, indexing
-- [ ] **Day 9** · Mon Nov 9 · NumPy broadcasting & vectorisation vs loops
-- [ ] **Day 10** · Tue Nov 10 · pandas: CSVs, filtering, groupby, merges, missing values
-- [ ] **Day 11** · Wed Nov 11 · Linear algebra: vectors, dot product, matrix multiplication
-- [ ] **Day 12** · Thu Nov 12 · Derivatives, chain rule, gradients + probability basics
-- [ ] **Day 13** · Fri Nov 13 · Loss functions (MSE) & gradient descent
-- [ ] **Day 14** · Sat Nov 14 · 🛠️ **Build:** linear regression from scratch in NumPy: predict queue wait time from queue length
+- [x] **Day 8** · Sun Nov 8 · 🔁 Review Week 1 + NumPy arrays, dtype, shape, reshape, indexing
+- [x] **Day 9** · Mon Nov 9 · NumPy broadcasting & vectorisation vs loops
+- [x] **Day 10** · Tue Nov 10 · pandas: CSVs, filtering, groupby, merges, missing values
+- [x] **Day 11** · Wed Nov 11 · Linear algebra: vectors, dot product, matrix multiplication
+- [x] **Day 12** · Thu Nov 12 · Derivatives, chain rule, gradients + probability basics
+- [x] **Day 13** · Fri Nov 13 · Loss functions (MSE) & gradient descent
+- [x] **Day 14** · Sat Nov 14 · 🛠️ **Build:** linear regression from scratch in NumPy: predict queue wait time from queue length
 
 </details>
 
