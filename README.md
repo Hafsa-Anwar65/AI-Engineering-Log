@@ -1,14 +1,6 @@
-<div align="center">
+# 🧠 AI Engineering Log
 
-# 🤖 AI Engineering Log
-
-**From the basics to building a robot's brain. One topic a day, code pushed every week.**
-
-`Nov 1, 2026 → Apr 11, 2027` · `23 weeks` · `162 days` · `4 gates`
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?style=flat-square&logo=ros&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-</div>
+My structured journey from Python fundamentals to Machine Learning, AI engineering, automation, and production-ready AI systems.
 
 ---
 
@@ -75,12 +67,14 @@ The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds
 
 | Phase | Weeks | Focus | Gate ✅ |
 |---|---|---|---|
-| 🧱 **1** | 1-6 · Nov 1-Dec 13 | Python, ML, computer vision & ROS 2 | My detector runs as a ROS 2 node in Gazebo; robot reaches waypoints from Python |
-| 🧠 **2** | 7-13 · Dec 14-Jan 31 | APIs + LLM engineering: LangChain, RAG, LangGraph | RAG eval of 50 with accuracy measured + agent success rate on 30 scenarios |
-| ☁️ **3** | 14-19 · Feb 1-Mar 14 | Automation, Linux/Docker, cloud, MLOps | Brain live on cloud with CI/CD + full robot demo in Gazebo; exam sat |
-| 🎯 **4** | 20-23 · Mar 15-Apr 11 | Polish, interviews, applications | 40+ applications and 4+ mock interviews |
+| 📦 1 | 1–6 · Nov 1–Dec 13 | Python, ML, computer vision & ROS 2 | My detector runs as a ROS 2 node in Gazebo; robot reaches waypoints from Python |
+| 🧠 2 | 7–13 · Dec 14–Jan 31 | APIs + LLM engineering: LangChain, RAG, LangGraph | RAG eval of 50 with accuracy measured + agent success rate on 30 scenarios |
+| ☁️ 3 | 14–19 · Feb 1–Mar 14 | Automation, Linux/Docker, cloud, MLOps | Brain live on cloud with CI/CD + full robot demo in Gazebo; exam sat |
+| 🎯 4 | 20–23 · Mar 15–Apr 11 | Polish, interviews, applications | 40+ applications and 4+ mock interviews |
 
-## 📊 Progress
+---
+
+# 📊 Progress
 
 | # | Week | Theme | Status |
 |:-:|---|---|:-:|
@@ -112,15 +106,13 @@ The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds
 
 ---
 
-## 📅 Week by week, day by day
+## 📐 Week 2 · NumPy, pandas & the math you actually use
 
-Click a week to see the daily topics. I tick each day off as I push it.
+**📅 Nov 8–Nov 14, 2026**
 
-### 🧱 Phase 1: Python, ML, computer vision & ROS 2
-<sub>Nov 1-Dec 13 (Weeks 1-6) · Gate: My detector runs as a ROS 2 node in Gazebo; robot reaches waypoints from Python</sub>
+This week focuses on the Python libraries and mathematical concepts that form the foundation of Machine Learning.
 
-<details>
-<summary><b>🐍 Week 1 · Nov 1-Nov 7 · Python from the basics</b></summary>
+### Progress
 
 **🎯 Done when:** I can write a small CLI program with classes, error handling, type hints and tests without looking things up  
 **📖 Resources:** Python official tutorial (docs.python.org/3/tutorial), Corey Schafer Python playlist (YouTube), 'Automate the Boring Stuff' (free online)  
@@ -551,37 +543,55 @@ _Every Sunday: one screenshot or clip + one real number._
 
 | Week | Update | Number |
 |---|---|---|
-| 1 | Repo structure + architecture plan | - |
+| Day 8 | NumPy arrays, dtype, shape, reshape & indexing | ✅ Done |
+| Day 9 | NumPy broadcasting & vectorization vs loops | ✅ Done |
+| Day 10 | Pandas: filtering, GroupBy & missing values | ✅ Done |
+| Day 11 | Linear algebra: vectors, dot product & matrix multiplication | ⬜ Upcoming |
+| Day 12 | Derivatives, chain rule, gradients & probability basics | ⬜ Upcoming |
+| Day 13 | Loss functions (MSE) & gradient descent | ⬜ Upcoming |
+| Day 14 | 🛠️ Build: Linear regression from scratch in NumPy | ⬜ Upcoming |
 
-## 🗂️ How this repo is organised
+### 📚 What I'm learning
 
+- NumPy arrays and vectorized operations
+- Broadcasting and efficient numerical computation
+- Pandas for data analysis and manipulation
+- Filtering, grouping and handling missing data
+- Linear algebra for Machine Learning
+- Derivatives and gradients
+- Loss functions and optimisation
+- Gradient Descent
+- Building Linear Regression from scratch
+
+### 📁 Week 2 Structure
+
+```text
+Week-02-NumPy & Pandas/
+│
+├── Day 08 - NumPy Arrays, dtype, shape, reshape, indexing
+├── Day 09 - Broadcasting & Vectorization vs Loops
+├── Day 10 - Pandas: Filtering, GroupBy, Missing Values
+└── Notes.md
 ```
-AI-Engineering-Log/
-├── README.md        ← you are here
-├── LOG.md           ← one line a day
-├── LeetCode/        ← 2 problems a day
-├── Week-01-Python Basics/
-│   ├── Day 01 - Python Basics.py
-│   ├── Day 02 - Control Flow.py
-│   ├── notes.md     ← key ideas in my own words
-│   └── project/     ← Saturday build
-└── Week-02-NumPy Pandas Math/ …
+
+---
+
+## 🎯 Current Goal
+
+I'm currently building my foundation in:
+
+```text
+Python
+   ↓
+NumPy & Pandas
+   ↓
+Mathematics for Machine Learning
+   ↓
+Machine Learning
+   ↓
+Computer Vision
+   ↓
+ROS 2 & Robotics
 ```
 
-## 📏 Rules I follow
-
-1. **One topic a day:** learn it, write it in my own words, push code.
-2. **Numbers over demos:** accuracy, latency and cost, or it didn't happen.
-3. **Every gate is earned:** if a gate slips, the phase gets longer; the bar stays the same.
-4. **No secrets in git:** keys live in `.env`, which is ignored.
-
-## 🤝 Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hafsa%20Anwar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hafsa-anwar-53b251313)
-[![GitHub](https://img.shields.io/badge/GitHub-Hafsa--Anwar65-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hafsa-Anwar65)
-
-<div align="center">
-
-<sub>Built one day at a time · Karachi 🇵🇰</sub>
-
-</div>
+**Current status: Week 2 — Day 10 complete. 🚀**
