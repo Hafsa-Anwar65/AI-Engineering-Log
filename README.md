@@ -1,6 +1,14 @@
-# 🧠 AI Engineering Log
+<div align="center">
 
-My structured journey from Python fundamentals to Machine Learning, AI engineering, automation, and production-ready AI systems.
+# 🤖 AI Engineering Log
+
+**From the basics to building a robot's brain. One topic a day, code pushed every week.**
+
+`Nov 1, 2026 → Apr 11, 2027` · `23 weeks` · `162 days` · `4 gates`
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?style=flat-square&logo=ros&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+</div>
 
 ---
 
@@ -9,9 +17,9 @@ My structured journey from Python fundamentals to Machine Learning, AI engineeri
 <!-- STREAK:START -->
 <div align="center">
 
-![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-14%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-14%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-14%20%2F%20162-3B82F6?style=for-the-badge)
+![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-16%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-16%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-16%20%2F%20162-3B82F6?style=for-the-badge)
 
-**14 / 162 days** · 8% complete
+**16 / 162 days** · 9% complete
 
 `███░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
@@ -19,7 +27,8 @@ My structured journey from Python fundamentals to Machine Learning, AI engineeri
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Oct 26 |   |   |   |   |   |   | 🟩 |
 | Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ |
+| Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| Nov 16 | 🟩 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
 
 <sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>
 
@@ -34,17 +43,17 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 ## 🔥 Latest
 
-**Days completed:** 14 / 162
+**Days completed:** 16 / 162
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
+| Day 016 | Nov 16 | Supervised vs unsupervised; train/val/test; data leakage | Classification 98.2%, KMeans clusters, leakage demo: 0.87 fake vs 0.48 honest | [`Day 16 - Supervised vs Unsupervised and Data Leakage.py`](./Week-03-Scikit-Learn%20ML/Day%2016%20-%20Supervised%20vs%20Unsupervised%20and%20Data%20Leakage.py) |
+| Day 015 | Nov 15 | Week 2 review + first look at scikit-learn | Week 2 self-check, EDA on breast cancer data, sklearn = NumPy least squares | [`Day 15 - Week 2 Review and First Look at scikit-learn.py`](./Week-03-Scikit-Learn%20ML/Day%2015%20-%20Week%202%20Review%20and%20First%20Look%20at%20scikit-learn.py) |
 | Day 014 | Nov 14 | 🛠️ Week 2 project | Linear regression from scratch in NumPy: R² 0.95, matches np.polyfit, 7 tests | [`linear_regression.py`](./Week-02-NumPy%20Pandas%20Math/Day%2014%20-%20Linear%20Regression%20Project/linear_regression.py) |
 | Day 013 | Nov 13 | Loss functions (MSE) & gradient descent | MSE vs MAE, gradient descent, learning-rate experiments | [`Day 13 - Loss Functions and Gradient Descent.py`](./Week-02-NumPy%20Pandas%20Math/Day%2013%20-%20Loss%20Functions%20and%20Gradient%20Descent.py) |
 | Day 012 | Nov 12 | Derivatives, chain rule, gradients + probability | Numerical derivatives, gradients, conditional probability | [`Day 12 - Derivatives Gradients and Probability.py`](./Week-02-NumPy%20Pandas%20Math/Day%2012%20-%20Derivatives%20Gradients%20and%20Probability.py) |
 | Day 011 | Nov 11 | Linear algebra: vectors, dot product, matrix multiplication | Vectors, magnitude, matmul, transpose practice | [`Day 11 - Linear Algebra.py`](./Week-02-NumPy%20Pandas%20Math/Day%2011%20-%20Linear%20Algebra.py) |
 | Day 010 | Nov 10 | pandas: CSVs, filtering, groupby, merges, missing values | Student data cleaning, groupby averages, merge | [`Day 10 - Pandas.py`](./Week-02-NumPy%20Pandas%20Math/Day%2010%20-%20Pandas.py) |
-| Day 009 | Nov 9 | Broadcasting & vectorisation vs loops | Speed test: NumPy ~24x faster than a loop on 1M numbers | [`Day 09 - Broadcasting and Vectorization.py`](./Week-02-NumPy%20Pandas%20Math/Day%2009%20-%20Broadcasting%20and%20Vectorization.py) |
-| Day 008 | Nov 8 | NumPy arrays: dtype, shape, reshape, indexing | Array and matrix practice | [`Day 08 - NumPy Arrays.py`](./Week-02-NumPy%20Pandas%20Math/Day%2008%20-%20NumPy%20Arrays.py) |
 
 📒 Full day-by-day history: [LOG.md](./LOG.md)
 
@@ -67,20 +76,18 @@ The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds
 
 | Phase | Weeks | Focus | Gate ✅ |
 |---|---|---|---|
-| 📦 1 | 1–6 · Nov 1–Dec 13 | Python, ML, computer vision & ROS 2 | My detector runs as a ROS 2 node in Gazebo; robot reaches waypoints from Python |
-| 🧠 2 | 7–13 · Dec 14–Jan 31 | APIs + LLM engineering: LangChain, RAG, LangGraph | RAG eval of 50 with accuracy measured + agent success rate on 30 scenarios |
-| ☁️ 3 | 14–19 · Feb 1–Mar 14 | Automation, Linux/Docker, cloud, MLOps | Brain live on cloud with CI/CD + full robot demo in Gazebo; exam sat |
-| 🎯 4 | 20–23 · Mar 15–Apr 11 | Polish, interviews, applications | 40+ applications and 4+ mock interviews |
+| 🧱 **1** | 1-6 · Nov 1-Dec 13 | Python, ML, computer vision & ROS 2 | My detector runs as a ROS 2 node in Gazebo; robot reaches waypoints from Python |
+| 🧠 **2** | 7-13 · Dec 14-Jan 31 | APIs + LLM engineering: LangChain, RAG, LangGraph | RAG eval of 50 with accuracy measured + agent success rate on 30 scenarios |
+| ☁️ **3** | 14-19 · Feb 1-Mar 14 | Automation, Linux/Docker, cloud, MLOps | Brain live on cloud with CI/CD + full robot demo in Gazebo; exam sat |
+| 🎯 **4** | 20-23 · Mar 15-Apr 11 | Polish, interviews, applications | 40+ applications and 4+ mock interviews |
 
----
-
-# 📊 Progress
+## 📊 Progress
 
 | # | Week | Theme | Status |
 |:-:|---|---|:-:|
 | 1 | Nov 1-Nov 7 | 🐍 [Python from the basics](./Week-01-Python%20Basics/) | ✅ Done |
 | 2 | Nov 8-Nov 14 | 📐 [NumPy, pandas & the math you actually use](./Week-02-NumPy%20Pandas%20Math/) | ✅ Done |
-| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./Week-03-Scikit-Learn%20ML/) | 🟡 Next |
+| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./Week-03-Scikit-Learn%20ML/) | 🟡 In progress |
 | 4 | Nov 22-Nov 28 | 🔥 [Neural networks & PyTorch basics](./Week-04-PyTorch%20Basics/) | ⬜ |
 | 5 | Nov 29-Dec 6 | 👁️ [Computer vision & object detection](./Week-05-Computer%20Vision/) | ⬜ |
 | 6 | Dec 7-Dec 13 | 🤖 [ROS 2 for the AI brain](./Week-06-ROS2%20Basics/) | ⬜ |
@@ -106,13 +113,15 @@ The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds
 
 ---
 
-## 📐 Week 2 · NumPy, pandas & the math you actually use
+## 📅 Week by week, day by day
 
-**📅 Nov 8–Nov 14, 2026**
+Click a week to see the daily topics. I tick each day off as I push it.
 
-This week focuses on the Python libraries and mathematical concepts that form the foundation of Machine Learning.
+### 🧱 Phase 1: Python, ML, computer vision & ROS 2
+<sub>Nov 1-Dec 13 (Weeks 1-6) · Gate: My detector runs as a ROS 2 node in Gazebo; robot reaches waypoints from Python</sub>
 
-### Progress
+<details>
+<summary><b>🐍 Week 1 · Nov 1-Nov 7 · Python from the basics</b></summary>
 
 **🎯 Done when:** I can write a small CLI program with classes, error handling, type hints and tests without looking things up  
 **📖 Resources:** Python official tutorial (docs.python.org/3/tutorial), Corey Schafer Python playlist (YouTube), 'Automate the Boring Stuff' (free online)  
@@ -155,8 +164,8 @@ This week focuses on the Python libraries and mathematical concepts that form th
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
 **📁 Folder:** [`Week-03-Scikit-Learn ML/`](./Week-03-Scikit-Learn%20ML/)
 
-- [ ] **Day 15** · Sun Nov 15 · 🔁 Review Week 2 + start the EscortBot data collection
-- [ ] **Day 16** · Mon Nov 16 · Supervised vs unsupervised; train/val/test splits & data leakage
+- [x] **Day 15** · Sun Nov 15 · 🔁 Review Week 2 + start the EscortBot data collection
+- [x] **Day 16** · Mon Nov 16 · Supervised vs unsupervised; train/val/test splits & data leakage
 - [ ] **Day 17** · Tue Nov 17 · Logistic regression & decision trees; text features with TF-IDF
 - [ ] **Day 18** · Wed Nov 18 · Random forests & gradient boosting (XGBoost idea)
 - [ ] **Day 19** · Thu Nov 19 · Overfitting, bias-variance, L1/L2; cross-validation & GridSearch
@@ -543,55 +552,37 @@ _Every Sunday: one screenshot or clip + one real number._
 
 | Week | Update | Number |
 |---|---|---|
-| Day 8 | NumPy arrays, dtype, shape, reshape & indexing | ✅ Done |
-| Day 9 | NumPy broadcasting & vectorization vs loops | ✅ Done |
-| Day 10 | Pandas: filtering, GroupBy & missing values | ✅ Done |
-| Day 11 | Linear algebra: vectors, dot product & matrix multiplication | ⬜ Upcoming |
-| Day 12 | Derivatives, chain rule, gradients & probability basics | ⬜ Upcoming |
-| Day 13 | Loss functions (MSE) & gradient descent | ⬜ Upcoming |
-| Day 14 | 🛠️ Build: Linear regression from scratch in NumPy | ⬜ Upcoming |
+| 1 | Repo structure + architecture plan | - |
 
-### 📚 What I'm learning
+## 🗂️ How this repo is organised
 
-- NumPy arrays and vectorized operations
-- Broadcasting and efficient numerical computation
-- Pandas for data analysis and manipulation
-- Filtering, grouping and handling missing data
-- Linear algebra for Machine Learning
-- Derivatives and gradients
-- Loss functions and optimisation
-- Gradient Descent
-- Building Linear Regression from scratch
-
-### 📁 Week 2 Structure
-
-```text
-Week-02-NumPy & Pandas/
-│
-├── Day 08 - NumPy Arrays, dtype, shape, reshape, indexing
-├── Day 09 - Broadcasting & Vectorization vs Loops
-├── Day 10 - Pandas: Filtering, GroupBy, Missing Values
-└── Notes.md
+```
+AI-Engineering-Log/
+├── README.md        ← you are here
+├── LOG.md           ← one line a day
+├── LeetCode/        ← 2 problems a day
+├── Week-01-Python Basics/
+│   ├── Day 01 - Python Basics.py
+│   ├── Day 02 - Control Flow.py
+│   ├── notes.md     ← key ideas in my own words
+│   └── project/     ← Saturday build
+└── Week-02-NumPy Pandas Math/ …
 ```
 
----
+## 📏 Rules I follow
 
-## 🎯 Current Goal
+1. **One topic a day:** learn it, write it in my own words, push code.
+2. **Numbers over demos:** accuracy, latency and cost, or it didn't happen.
+3. **Every gate is earned:** if a gate slips, the phase gets longer; the bar stays the same.
+4. **No secrets in git:** keys live in `.env`, which is ignored.
 
-I'm currently building my foundation in:
+## 🤝 Connect
 
-```text
-Python
-   ↓
-NumPy & Pandas
-   ↓
-Mathematics for Machine Learning
-   ↓
-Machine Learning
-   ↓
-Computer Vision
-   ↓
-ROS 2 & Robotics
-```
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hafsa%20Anwar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hafsa-anwar-53b251313)
+[![GitHub](https://img.shields.io/badge/GitHub-Hafsa--Anwar65-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hafsa-Anwar65)
 
-**Current status: Week 2 — Day 10 complete. 🚀**
+<div align="center">
+
+<sub>Built one day at a time · Karachi 🇵🇰</sub>
+
+</div>
