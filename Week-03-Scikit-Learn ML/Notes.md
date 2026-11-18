@@ -5,7 +5,9 @@
 **Days this week:**
 [Day 15](#-day-15--week-2-review--first-look-at-scikit-learn) ·
 [Day 16](#-day-16--supervised-vs-unsupervised-splits--data-leakage) ·
-Day 17 · Day 18 · Day 19 · Day 20 · Day 21
+[Day 17](#-day-17--logistic-regression--decision-trees) ·
+[Day 18](#-day-18--random-forests--gradient-boosting) ·
+Day 19 · Day 20 · Day 21
 
 ---
 
@@ -145,5 +147,160 @@ I added a fake "second opinion result" column, which is only known **after** the
 - Put every preprocessing step in a **`Pipeline`**.
 - Ask for every feature: *"Would I know this at prediction time?"*
 - Treat a near-perfect score as a **warning sign**, not a win.
+
+---
+
+## 📅 Day 17 · Logistic Regression & Decision Trees
+
+**Date:** Nov 17, 2026
+**Code:** [`Day 17 - Logistic Regression and Decision Trees.py`](./Day%2017%20-%20Logistic%20Regression%20and%20Decision%20Trees.py)
+
+### 1. Logistic Regression
+
+Despite the name, it's a **classification** model. It works like linear regression, then squeezes the result into a probability with the **sigmoid**:
+
+```text
+probability = sigmoid(w · x + b)        sigmoid(z) = 1 / (1 + e^-z)
+```
+
+| z | sigmoid(z) |
+|:-:|:-:|
+| -5 | 0.007 |
+| 0 | 0.500 |
+| 5 | 0.993 |
+
+- `predict_proba()` gives the probability; `predict()` uses a 0.5 cut-off.
+- **Coefficients** show which features push towards each class (after scaling).
+- Result: **98.2%** test accuracy on breast cancer data.
+
+### 2. Decision Trees
+
+A flowchart of yes/no questions the model learns from the data:
+
+```text
+worst radius <= 16.8?
+├── yes → worst concave points <= 0.14? → benign / malignant
+└── no  → texture error <= 0.47?        → benign / malignant
+```
+
+#### Depth controls overfitting
+
+| max_depth | Train | Test |
+|:-:|:-:|:-:|
+| 1 | 0.923 | 0.921 |
+| **3** | 0.976 | **0.939** |
+| 5 | 0.993 | 0.921 |
+| None | **1.000** | 0.912 |
+
+> ⚠️ 100% on train but worse on test = **overfitting**: the tree memorised the training data.
+
+### 3. Logistic Regression vs Decision Tree
+
+| | Logistic regression | Decision tree |
+|---|---|---|
+| Shape of the boundary | Straight line / plane | Boxes (step-like) |
+| Needs scaling | ✅ Yes | ❌ No |
+| Easy to explain | Coefficients | Readable yes/no rules |
+| Risk | Underfits curved patterns | Overfits when deep |
+
+### 4. Classification Report
+
+| Metric | Question it answers |
+|---|---|
+| **Precision** | Of the ones I said were malignant, how many really were? |
+| **Recall** | Of all the real malignant ones, how many did I catch? |
+| **F1** | One number balancing precision and recall |
+| **Support** | How many real examples of that class |
+
+### 5. Text with TF-IDF
+
+**TF-IDF** turns text into numbers: a word scores high if it's common in **this** message but rare across **all** messages.
+
+```python
+spam_model = make_pipeline(TfidfVectorizer(), LogisticRegression())
+```
+
+My mini spam detector learned that **free, now, won, selected** point to spam.
+
+### 🛠️ What I Built
+
+| Part | What it does |
+|---|---|
+| Sigmoid demo | Shows how scores become probabilities |
+| Cancer classifier | Logistic regression with probabilities and feature importance |
+| Tree depth experiment | Shows overfitting as depth grows |
+| Spam detector | TF-IDF + logistic regression on 12 messages |
+
+---
+
+## 📅 Day 18 · Random Forests & Gradient Boosting
+
+**Date:** Nov 18, 2026
+**Code:** [`Day 18 - Random Forests and Gradient Boosting.py`](./Day%2018%20-%20Random%20Forests%20and%20Gradient%20Boosting.py)
+
+### 1. Why One Tree Isn't Enough
+
+Training trees on slightly different samples of the same data gave different first questions and different scores (0.912 to 0.930). A single tree is **unstable** (high variance).
+
+### 2. Ensembles: Many Models Together
+
+| | **Bagging** (Random Forest) | **Boosting** (Gradient Boosting) |
+|---|---|---|
+| How trees are built | **In parallel**, independently | **One after another** |
+| Each tree learns from | A random sample of rows (bootstrap) + random features | The **mistakes** of the trees before it |
+| Final answer | Majority vote | Sum of all trees' small corrections |
+| Mainly fixes | Variance (overfitting) | Bias (underfitting) |
+| Famous versions | `RandomForestClassifier` | `GradientBoosting`, **XGBoost**, LightGBM |
+
+#### Bagging by hand
+
+| | Accuracy |
+|---|:-:|
+| Average single tree | 0.908 |
+| 25 trees voting | **0.939** |
+
+### 3. Model Comparison (5-fold cross-validation)
+
+| Model | Mean accuracy | Std |
+|---|:-:|:-:|
+| Decision tree | 0.917 | 0.024 |
+| Random forest | 0.958 | 0.024 |
+| Gradient boosting | 0.963 | 0.021 |
+| **Hist gradient boosting** | **0.965** | **0.018** |
+
+> 💡 **Cross-validation** trains and tests 5 times on different splits, so the score doesn't depend on one lucky split.
+
+### 4. Random Forest Details
+
+- **More trees** = more stable (results settled around 50 trees).
+- **Out-of-bag (OOB) score:** each tree skips about a third of the rows, which works as free validation. OOB = **0.960**.
+- **Feature importance:** `worst perimeter`, `worst area`, `worst concave points` mattered most.
+
+### 5. Gradient Boosting: Learning Rate
+
+| learning_rate | After 10 trees | After 100 trees |
+|:-:|:-:|:-:|
+| 0.01 | 0.632 | 0.921 |
+| 0.1 | 0.930 | 0.956 |
+| 1.0 | 0.947 | 0.956 |
+
+Small learning rate = slow but careful (needs more trees). Too big = can overshoot and overfit.
+
+### 6. Multi-class: Wine (3 classes)
+
+| Model | Accuracy |
+|---|:-:|
+| Decision tree | 0.865 |
+| **Random forest** | **0.967** |
+| Hist gradient boosting | 0.955 |
+
+### 🛠️ What I Built
+
+| Part | What it shows |
+|---|---|
+| Unstable trees | Same data, different trees |
+| Bagging by hand | 25 trees voting beat one tree |
+| Model comparison | Ensembles beat a single tree in cross-validation |
+| Learning-rate experiment | How boosting improves tree by tree |
 
 ---

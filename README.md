@@ -17,9 +17,9 @@
 <!-- STREAK:START -->
 <div align="center">
 
-![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-16%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-16%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-16%20%2F%20162-3B82F6?style=for-the-badge)
+![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-18%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-18%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-18%20%2F%20162-3B82F6?style=for-the-badge)
 
-**16 / 162 days** · 9% complete
+**18 / 162 days** · 11% complete
 
 `███░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
@@ -28,7 +28,7 @@
 | Oct 26 |   |   |   |   |   |   | 🟩 |
 | Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
 | Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| Nov 16 | 🟩 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| Nov 16 | 🟩 | 🟩 | 🟩 | ⬜ | ⬜ | ⬜ | ⬜ |
 
 <sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>
 
@@ -43,17 +43,17 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 ## 🔥 Latest
 
-**Days completed:** 16 / 162
+**Days completed:** 18 / 162
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
+| Day 018 | Nov 18 | Random forests & gradient boosting | Bagging by hand, model comparison: tree 0.917 vs boosting 0.965 | [`Day 18 - Random Forests and Gradient Boosting.py`](./Week-03-Scikit-Learn%20ML/Day%2018%20-%20Random%20Forests%20and%20Gradient%20Boosting.py) |
+| Day 017 | Nov 17 | Logistic regression & decision trees + TF-IDF | Cancer classifier 98.2%, tree depth vs overfitting, mini spam detector | [`Day 17 - Logistic Regression and Decision Trees.py`](./Week-03-Scikit-Learn%20ML/Day%2017%20-%20Logistic%20Regression%20and%20Decision%20Trees.py) |
 | Day 016 | Nov 16 | Supervised vs unsupervised; train/val/test; data leakage | Classification 98.2%, KMeans clusters, leakage demo: 0.87 fake vs 0.48 honest | [`Day 16 - Supervised vs Unsupervised and Data Leakage.py`](./Week-03-Scikit-Learn%20ML/Day%2016%20-%20Supervised%20vs%20Unsupervised%20and%20Data%20Leakage.py) |
 | Day 015 | Nov 15 | Week 2 review + first look at scikit-learn | Week 2 self-check, EDA on breast cancer data, sklearn = NumPy least squares | [`Day 15 - Week 2 Review and First Look at scikit-learn.py`](./Week-03-Scikit-Learn%20ML/Day%2015%20-%20Week%202%20Review%20and%20First%20Look%20at%20scikit-learn.py) |
 | Day 014 | Nov 14 | 🛠️ Week 2 project | Linear regression from scratch in NumPy: R² 0.95, matches np.polyfit, 7 tests | [`linear_regression.py`](./Week-02-NumPy%20Pandas%20Math/Day%2014%20-%20Linear%20Regression%20Project/linear_regression.py) |
 | Day 013 | Nov 13 | Loss functions (MSE) & gradient descent | MSE vs MAE, gradient descent, learning-rate experiments | [`Day 13 - Loss Functions and Gradient Descent.py`](./Week-02-NumPy%20Pandas%20Math/Day%2013%20-%20Loss%20Functions%20and%20Gradient%20Descent.py) |
 | Day 012 | Nov 12 | Derivatives, chain rule, gradients + probability | Numerical derivatives, gradients, conditional probability | [`Day 12 - Derivatives Gradients and Probability.py`](./Week-02-NumPy%20Pandas%20Math/Day%2012%20-%20Derivatives%20Gradients%20and%20Probability.py) |
-| Day 011 | Nov 11 | Linear algebra: vectors, dot product, matrix multiplication | Vectors, magnitude, matmul, transpose practice | [`Day 11 - Linear Algebra.py`](./Week-02-NumPy%20Pandas%20Math/Day%2011%20-%20Linear%20Algebra.py) |
-| Day 010 | Nov 10 | pandas: CSVs, filtering, groupby, merges, missing values | Student data cleaning, groupby averages, merge | [`Day 10 - Pandas.py`](./Week-02-NumPy%20Pandas%20Math/Day%2010%20-%20Pandas.py) |
 
 📒 Full day-by-day history: [LOG.md](./LOG.md)
 
@@ -166,8 +166,8 @@ Click a week to see the daily topics. I tick each day off as I push it.
 
 - [x] **Day 15** · Sun Nov 15 · 🔁 Review Week 2 + start the EscortBot data collection
 - [x] **Day 16** · Mon Nov 16 · Supervised vs unsupervised; train/val/test splits & data leakage
-- [ ] **Day 17** · Tue Nov 17 · Logistic regression & decision trees; text features with TF-IDF
-- [ ] **Day 18** · Wed Nov 18 · Random forests & gradient boosting (XGBoost idea)
+- [x] **Day 17** · Tue Nov 17 · Logistic regression & decision trees; text features with TF-IDF
+- [x] **Day 18** · Wed Nov 18 · Random forests & gradient boosting (XGBoost idea)
 - [ ] **Day 19** · Thu Nov 19 · Overfitting, bias-variance, L1/L2; cross-validation & GridSearch
 - [ ] **Day 20** · Fri Nov 20 · Metrics (precision, recall, F1, ROC-AUC, confusion matrix) + class imbalance
 - [ ] **Day 21** · Sat Nov 21 · 🛠️ **Build:** visitor-intent classifier (FAQ / guide-me / complaint / staff), 3 models compared
