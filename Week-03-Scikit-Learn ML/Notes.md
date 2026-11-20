@@ -7,7 +7,9 @@
 [Day 16](#-day-16--supervised-vs-unsupervised-splits--data-leakage) ·
 [Day 17](#-day-17--logistic-regression--decision-trees) ·
 [Day 18](#-day-18--random-forests--gradient-boosting) ·
-Day 19 · Day 20 · Day 21
+[Day 19](#-day-19--overfitting-regularisation--cross-validation) ·
+[Day 20](#-day-20--classification-metrics--class-imbalance) ·
+Day 21
 
 ---
 
@@ -302,5 +304,161 @@ Small learning rate = slow but careful (needs more trees). Too big = can oversho
 | Bagging by hand | 25 trees voting beat one tree |
 | Model comparison | Ensembles beat a single tree in cross-validation |
 | Learning-rate experiment | How boosting improves tree by tree |
+
+---
+
+## 📅 Day 19 · Overfitting, Regularisation & Cross-Validation
+
+**Date:** Nov 19, 2026
+**Code:** [`Day 19 - Overfitting Regularization and Cross-Validation.py`](./Day%2019%20-%20Overfitting%20Regularization%20and%20Cross-Validation.py)
+
+### 1. Bias vs Variance
+
+![Underfit, good fit, overfit](./day19_bias_variance.png)
+
+| Polynomial degree | Train MSE | New-data MSE | Problem |
+|:-:|:-:|:-:|---|
+| 1 | 0.187 | 0.233 | **Underfit**: too simple (high bias) |
+| **4** | 0.025 | **0.045** | ✅ Just right |
+| 15 | **0.015** | 0.154 | **Overfit**: memorised the noise (high variance) |
+
+> 💡 The overfit model has the **best training score** and a bad score on new data. Always judge a model on data it hasn't seen.
+
+| | High bias (underfit) | High variance (overfit) |
+|---|---|---|
+| Train score | Bad | Very good |
+| Test score | Bad | Bad |
+| Fixes | More features, more complex model | More data, simpler model, **regularisation** |
+
+### 2. Regularisation: L1 & L2
+
+Regularisation adds a **penalty for large weights**, which keeps the model simpler.
+
+| | **Ridge (L2)** | **Lasso (L1)** |
+|---|---|---|
+| Penalty | Sum of **squared** weights | Sum of **absolute** weights |
+| Effect | Shrinks all weights a little | Can push weights to **exactly 0** |
+| Use it for | Many useful, related features | Automatic **feature selection** |
+| Strength | `alpha`: bigger = simpler model | `alpha`: bigger = more zeros |
+
+- Lasso `alpha=1` dropped one feature and kept the other 9.
+- With 220 polynomial features, plain linear regression **broke** (R² **-13.69**) while Ridge stayed sensible (R² **0.42**).
+
+> ⚠️ Scale features before Ridge/Lasso; otherwise the penalty treats features unfairly.
+
+### 3. Cross-Validation
+
+One split depends on luck: the same tree scored anywhere from **0.904 to 0.939** with different seeds.
+
+**K-fold cross-validation** splits the data into K parts, trains K times, and each part is the test set once:
+
+```text
+5-fold CV: [0.939 0.912 0.912 0.947 0.956] -> mean 0.933 ± 0.018
+```
+
+The mean is a fairer score, and the ± shows how stable the model is.
+
+### 4. Hyperparameter Tuning
+
+| | **GridSearchCV** | **RandomizedSearchCV** |
+|---|---|---|
+| Tries | **Every** combination | A **random sample** of combinations |
+| Good for | Small grids | Big search spaces |
+| Today | 18 combinations → best `max_depth=4`, test **0.939** | 10 tries → best `C=0.121`, test **0.974** |
+
+```python
+grid = GridSearchCV(model, param_grid={"max_depth": [2, 3, 4, 5]}, cv=5)
+grid.fit(X_train, y_train)
+grid.best_params_, grid.best_score_
+```
+
+> 💡 Inside a Pipeline, parameter names use the step name: `logisticregression__C`.
+
+### 🛠️ What I Built
+
+| Part | What it shows |
+|---|---|
+| Polynomial fits (degree 1, 4, 15) | Underfit vs good fit vs overfit, with a plot |
+| Ridge vs Lasso comparison | How regularisation shrinks or removes weights |
+| Single split vs 5-fold CV | Why one split isn't reliable |
+| GridSearch + RandomizedSearch | Automatic hyperparameter tuning |
+
+---
+
+## 📅 Day 20 · Classification Metrics & Class Imbalance
+
+**Date:** Nov 20, 2026
+**Code:** [`Day 20 - Classification Metrics and Class Imbalance.py`](./Day%2020%20-%20Classification%20Metrics%20and%20Class%20Imbalance.py)
+
+The problem: a **fraud detector** where only **3.5%** of transactions are fraud.
+
+### 1. The Accuracy Trap
+
+A "model" that **always says not fraud** gets **96.5% accuracy** and catches **zero** fraud. On imbalanced data, accuracy alone is useless.
+
+### 2. Confusion Matrix
+
+| | Predicted OK | Predicted FRAUD |
+|---|:-:|:-:|
+| **Actually OK** | TN = 2412 | FP = 0 |
+| **Actually FRAUD** | FN = 79 | TP = 9 |
+
+| Metric | Formula | Plain question | Here |
+|---|---|---|:-:|
+| **Precision** | TP / (TP + FP) | Of my fraud alerts, how many were real? | 1.000 |
+| **Recall** | TP / (TP + FN) | Of all real fraud, how much did I catch? | 0.102 |
+| **F1** | 2·P·R / (P + R) | Balance of the two | 0.186 |
+| **ROC-AUC** | Area under ROC curve | How well scores rank fraud above normal | 0.794 |
+| **PR-AUC** | Area under precision-recall curve | Ranking quality when positives are rare | 0.307 |
+
+### 3. The Threshold
+
+The model gives a probability; the **threshold** decides when to call it fraud.
+
+| Threshold | Fraud caught (recall) | Alerts that were real (precision) | Alerts |
+|:-:|:-:|:-:|:-:|
+| 0.5 | 10% | 100% | 9 |
+| 0.3 | 20% | 60% | 30 |
+| 0.15 | 31% | 32% | 85 |
+| 0.05 | 62% | 12% | 448 |
+
+> 💡 Lower threshold = catch more, but more false alarms. Choose the threshold on **training/validation** data, never on test.
+
+### 4. Handling Imbalance
+
+| Method | Recall | Precision | F1 | PR-AUC |
+|---|:-:|:-:|:-:|:-:|
+| Logistic regression | 0.102 | 1.000 | 0.186 | 0.307 |
+| Logistic, `class_weight="balanced"` | **0.716** | 0.092 | 0.162 | 0.228 |
+| Logistic, oversampled fraud rows | 0.705 | 0.091 | 0.161 | 0.223 |
+| Random forest, balanced | 0.114 | 1.000 | 0.204 | **0.600** |
+| **Random forest, threshold 0.3** | 0.295 | 0.929 | **0.448** | **0.600** |
+
+- **`class_weight="balanced"`** makes mistakes on the rare class cost more.
+- **Oversampling** copies rare rows in the **training** set only (SMOTE creates new synthetic ones).
+- **Changing the threshold** is often the simplest, strongest fix.
+
+### 5. ROC & Precision-Recall Curves
+
+![ROC and PR curves](./day20_roc_pr_curves.png)
+
+### 6. Which Metric When?
+
+| Situation | Watch |
+|---|---|
+| Missing a positive is costly (fraud, cancer) | **Recall** |
+| False alarms are costly (spam filter, blocking a card) | **Precision** |
+| Rare positive class | **PR-AUC**, **F1** (not accuracy) |
+| Balanced classes, equal costs | Accuracy is fine |
+
+### 🛠️ What I Built
+
+| Part | What it shows |
+|---|---|
+| Dummy model | 96.5% accuracy with zero fraud caught |
+| Confusion matrix by hand | Where precision and recall come from |
+| Threshold experiment | The precision-recall trade-off |
+| Imbalance fixes | Class weights, oversampling, thresholds compared |
+| ROC + PR curves | Random forest ranks fraud much better (PR-AUC 0.60 vs 0.31) |
 
 ---
