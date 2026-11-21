@@ -17,7 +17,7 @@
 <!-- STREAK:START -->
 <div align="center">
 
-![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-20%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-20%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-20%20%2F%20162-3B82F6?style=for-the-badge)
+![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-0%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-20%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-20%20%2F%20162-3B82F6?style=for-the-badge)
 
 **20 / 162 days** · 12% complete
 
@@ -28,7 +28,7 @@
 | Oct 26 |   |   |   |   |   |   | 🟩 |
 | Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
 | Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| Nov 16 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ | ⬜ |
+| Nov 16 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟥 | ⬜ |
 
 <sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>
 
