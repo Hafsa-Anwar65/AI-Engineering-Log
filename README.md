@@ -28,7 +28,8 @@
 | Oct 26 |   |   |   |   |   |   | 🟩 |
 | Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
 | Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| Nov 16 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟥 | ⬜ |
+| Nov 16 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟥 | 🟥 |
+| Nov 23 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
 
 <sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>
 
