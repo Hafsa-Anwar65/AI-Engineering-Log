@@ -17,9 +17,9 @@
 <!-- STREAK:START -->
 <div align="center">
 
-![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-20%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-20%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-20%20%2F%20162-3B82F6?style=for-the-badge)
+![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-24%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-24%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-24%20%2F%20162-3B82F6?style=for-the-badge)
 
-**20 / 162 days** · 12% complete
+**24 / 162 days** · 14% complete
 
 `████░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
@@ -28,7 +28,8 @@
 | Oct 26 |   |   |   |   |   |   | 🟩 |
 | Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
 | Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| Nov 16 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ | ⬜ |
+| Nov 16 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| Nov 23 | 🟩 | 🟩 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
 
 <sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>
 
@@ -43,17 +44,17 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 ## 🔥 Latest
 
-**Days completed:** 20 / 162
+**Days completed:** 24 / 162
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
+| Day 024 | Nov 24 | Backpropagation: my own micrograd | Autograd engine + MLP: loss 5.28 to 0.02, two moons 95% | [`Day 24 - Backpropagation and Micrograd.py`](./Week-04-PyTorch%20Basics/Day%2024%20-%20Backpropagation%20and%20Micrograd.py) |
+| Day 023 | Nov 23 | Perceptron, neurons, layers, activations | Perceptron learns AND/OR but not XOR; 2-layer net solves XOR | [`Day 23 - Perceptron Neurons and Activations.py`](./Week-04-PyTorch%20Basics/Day%2023%20-%20Perceptron%20Neurons%20and%20Activations.py) |
+| Day 022 | Nov 22 | Week 3 review + micrograd part 1 | Derivatives, computation graph, manual backprop checked numerically | [`Day 22 - Week 3 Review and Micrograd Part 1.py`](./Week-04-PyTorch%20Basics/Day%2022%20-%20Week%203%20Review%20and%20Micrograd%20Part%201.py) |
+| Day 021 | Nov 21 | 🛠️ Week 3 project | Banking intent classifier: 77 intents, 4 models compared, Linear SVM 89.4% | [`banking_intents.py`](./Week-03-Scikit-Learn%20ML/Day%2021%20-%20Banking%20Intent%20Classifier%20Project/banking_intents.py) |
 | Day 020 | Nov 20 | Classification metrics & class imbalance | Fraud detector: accuracy trap, confusion matrix, thresholds, class weights, ROC/PR curves | [`Day 20 - Classification Metrics and Class Imbalance.py`](./Week-03-Scikit-Learn%20ML/Day%2020%20-%20Classification%20Metrics%20and%20Class%20Imbalance.py) |
 | Day 019 | Nov 19 | Overfitting, bias-variance, L1/L2, cross-validation & tuning | Under/overfit plot, Ridge vs Lasso, 5-fold CV, GridSearch & RandomizedSearch | [`Day 19 - Overfitting Regularization and Cross-Validation.py`](./Week-03-Scikit-Learn%20ML/Day%2019%20-%20Overfitting%20Regularization%20and%20Cross-Validation.py) |
 | Day 018 | Nov 18 | Random forests & gradient boosting | Bagging by hand, model comparison: tree 0.917 vs boosting 0.965 | [`Day 18 - Random Forests and Gradient Boosting.py`](./Week-03-Scikit-Learn%20ML/Day%2018%20-%20Random%20Forests%20and%20Gradient%20Boosting.py) |
-| Day 017 | Nov 17 | Logistic regression & decision trees + TF-IDF | Cancer classifier 98.2%, tree depth vs overfitting, mini spam detector | [`Day 17 - Logistic Regression and Decision Trees.py`](./Week-03-Scikit-Learn%20ML/Day%2017%20-%20Logistic%20Regression%20and%20Decision%20Trees.py) |
-| Day 016 | Nov 16 | Supervised vs unsupervised; train/val/test; data leakage | Classification 98.2%, KMeans clusters, leakage demo: 0.87 fake vs 0.48 honest | [`Day 16 - Supervised vs Unsupervised and Data Leakage.py`](./Week-03-Scikit-Learn%20ML/Day%2016%20-%20Supervised%20vs%20Unsupervised%20and%20Data%20Leakage.py) |
-| Day 015 | Nov 15 | Week 2 review + first look at scikit-learn | Week 2 self-check, EDA on breast cancer data, sklearn = NumPy least squares | [`Day 15 - Week 2 Review and First Look at scikit-learn.py`](./Week-03-Scikit-Learn%20ML/Day%2015%20-%20Week%202%20Review%20and%20First%20Look%20at%20scikit-learn.py) |
-| Day 014 | Nov 14 | 🛠️ Week 2 project | Linear regression from scratch in NumPy: R² 0.95, matches np.polyfit, 7 tests | [`linear_regression.py`](./Week-02-NumPy%20Pandas%20Math/Day%2014%20-%20Linear%20Regression%20Project/linear_regression.py) |
 
 📒 Full day-by-day history: [LOG.md](./LOG.md)
 
@@ -87,8 +88,8 @@ The AI brain for **EscortBot**, a ROS 2 banking-assistant robot. Each phase adds
 |:-:|---|---|:-:|
 | 1 | Nov 1-Nov 7 | 🐍 [Python from the basics](./Week-01-Python%20Basics/) | ✅ Done |
 | 2 | Nov 8-Nov 14 | 📐 [NumPy, pandas & the math you actually use](./Week-02-NumPy%20Pandas%20Math/) | ✅ Done |
-| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./Week-03-Scikit-Learn%20ML/) | 🟡 In progress |
-| 4 | Nov 22-Nov 28 | 🔥 [Neural networks & PyTorch basics](./Week-04-PyTorch%20Basics/) | ⬜ |
+| 3 | Nov 15-Nov 21 | 📊 [Classic machine learning with scikit-learn](./Week-03-Scikit-Learn%20ML/) | ✅ Done |
+| 4 | Nov 22-Nov 28 | 🔥 [Neural networks & PyTorch basics](./Week-04-PyTorch%20Basics/) | 🟡 In progress |
 | 5 | Nov 29-Dec 6 | 👁️ [Computer vision & object detection](./Week-05-Computer%20Vision/) | ⬜ |
 | 6 | Dec 7-Dec 13 | 🤖 [ROS 2 for the AI brain](./Week-06-ROS2%20Basics/) | ⬜ |
 | 7 | Dec 14-Dec 20 | ⚡ [FastAPI & Flask from the basics](./Week-07-FastAPI%20Flask/) | ⬜ |
@@ -170,7 +171,7 @@ Click a week to see the daily topics. I tick each day off as I push it.
 - [x] **Day 18** · Wed Nov 18 · Random forests & gradient boosting (XGBoost idea)
 - [x] **Day 19** · Thu Nov 19 · Overfitting, bias-variance, L1/L2; cross-validation & GridSearch
 - [x] **Day 20** · Fri Nov 20 · Metrics (precision, recall, F1, ROC-AUC, confusion matrix) + class imbalance
-- [ ] **Day 21** · Sat Nov 21 · 🛠️ **Build:** visitor-intent classifier (FAQ / guide-me / complaint / staff), 3 models compared
+- [x] **Day 21** · Sat Nov 21 · 🛠️ **Build:** visitor-intent classifier (FAQ / guide-me / complaint / staff), 3 models compared
 
 </details>
 
@@ -182,9 +183,9 @@ Click a week to see the daily topics. I tick each day off as I push it.
 **🧩 Coding practice:** LeetCode easy: arrays, strings, hash maps  
 **📁 Folder:** [`Week-04-PyTorch Basics/`](./Week-04-PyTorch%20Basics/)
 
-- [ ] **Day 22** · Sun Nov 22 · 🔁 Review Week 3 + Karpathy micrograd part 1 + label my camera frames
-- [ ] **Day 23** · Mon Nov 23 · Perceptron, neurons, layers, activations (ReLU, sigmoid, softmax)
-- [ ] **Day 24** · Tue Nov 24 · Forward pass & backpropagation (finish micrograd, push my version)
+- [x] **Day 22** · Sun Nov 22 · 🔁 Review Week 3 + Karpathy micrograd part 1 + label my camera frames
+- [x] **Day 23** · Mon Nov 23 · Perceptron, neurons, layers, activations (ReLU, sigmoid, softmax)
+- [x] **Day 24** · Tue Nov 24 · Forward pass & backpropagation (finish micrograd, push my version)
 - [ ] **Day 25** · Wed Nov 25 · PyTorch tensors, CPU/GPU, autograd, Dataset & DataLoader
 - [ ] **Day 26** · Thu Nov 26 · The training loop + optimizers (SGD, momentum, Adam, LR schedules)
 - [ ] **Day 27** · Fri Nov 27 · Batch size, epochs, early stopping, dropout, batchnorm, save/load, seeds

@@ -9,7 +9,7 @@
 [Day 18](#-day-18--random-forests--gradient-boosting) ·
 [Day 19](#-day-19--overfitting-regularisation--cross-validation) ·
 [Day 20](#-day-20--classification-metrics--class-imbalance) ·
-Day 21
+[Day 21](#-day-21--%EF%B8%8F-week-3-project-banking-intent-classifier)
 
 ---
 
@@ -462,3 +462,47 @@ The model gives a probability; the **threshold** decides when to call it fraud.
 | ROC + PR curves | Random forest ranks fraud much better (PR-AUC 0.60 vs 0.31) |
 
 ---
+
+## 📅 Day 21 · 🛠️ Week 3 Project: Banking Intent Classifier
+
+**Date:** Nov 21, 2026
+**Code:** [`Day 21 - Banking Intent Classifier Project/`](./Day%2021%20-%20Banking%20Intent%20Classifier%20Project/)
+
+### What I Built
+
+A classifier that reads a bank customer's message and predicts which of **77 intents** it is (card arrival, stolen card, exchange rate, top-up failed ...), trained on the public **Banking77** dataset (10,003 train / 3,080 test messages).
+
+![Results](./Day%2021%20-%20Banking%20Intent%20Classifier%20Project/results.png)
+
+### Results
+
+| Model | Accuracy | Macro-F1 | Train time |
+|---|:-:|:-:|:-:|
+| Naive Bayes | 0.799 | 0.793 | 3.0s |
+| Random Forest | 0.867 | 0.867 | 28.5s |
+| Logistic Regression | 0.894 | 0.894 | 14.4s |
+| **Linear SVM** | **0.894** | **0.894** | **0.9s** |
+
+> 💡 Linear models work very well on TF-IDF text features: lots of features, mostly zeros, and classes that can be separated by straight lines.
+
+### Why macro-F1?
+
+With 77 classes, **macro-F1** gives every intent the same weight, so the model can't look good by only getting the common intents right.
+
+### Error Analysis
+
+| Hardest intents | F1 |
+|---|:-:|
+| balance_not_updated_after_bank_transfer | 0.71 |
+| top_up_failed | 0.75 |
+| pending_transfer | 0.76 |
+
+The most confused pairs mean almost the same thing: `verify_my_identity` vs `why_verify_identity`, `top_up_failed` vs `top_up_reverted`. Word counts can't capture meaning; **embeddings** (Week 8) should help.
+
+### Tests (4 passed ✅)
+
+All models fit and predict · obvious intents are learned · TF-IDF keeps word pairs · the confusion helper ignores correct answers.
+
+---
+
+# ✅ Week 3 complete
