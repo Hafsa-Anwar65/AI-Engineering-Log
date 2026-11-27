@@ -17,11 +17,11 @@
 <!-- STREAK:START -->
 <div align="center">
 
-![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-24%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-24%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-24%20%2F%20162-3B82F6?style=for-the-badge)
+![🔥 Current streak](https://img.shields.io/badge/%F0%9F%94%A5%20Current%20streak-27%20days-FF6B35?style=for-the-badge) ![🏆 Best streak](https://img.shields.io/badge/%F0%9F%8F%86%20Best%20streak-27%20days-F7B32B?style=for-the-badge) ![📅 Days done](https://img.shields.io/badge/%F0%9F%93%85%20Days%20done-27%20%2F%20162-3B82F6?style=for-the-badge)
 
-**24 / 162 days** · 14% complete
+**27 / 162 days** · 16% complete
 
-`████░░░░░░░░░░░░░░░░░░░░░░░░░░`
+`█████░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Week of | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -29,7 +29,7 @@
 | Nov 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
 | Nov 9 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
 | Nov 16 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| Nov 23 | 🟩 | 🟩 | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| Nov 23 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | ⬜ | ⬜ |
 
 <sub>🟩 day's topic completed · ⬜ upcoming · 🟥 behind schedule · updates automatically</sub>
 
@@ -44,17 +44,17 @@ I'm **Hafsa Anwar**, an AI & Automation Engineer and Robotics & Intelligent Syst
 
 ## 🔥 Latest
 
-**Days completed:** 24 / 162
+**Days completed:** 27 / 162
 
 | Day | Date | Topic | What I built | Code |
 |---|---|---|---|---|
+| Day 027 | Nov 27 | Batch size, early stopping, dropout, batchnorm, save/load | Overfitting experiment: plain 77.5% vs dropout + early stopping 80% | [`Day 27 - Batch Size Regularization and Saving Models.py`](./Week-04-PyTorch%20Basics/Day%2027%20-%20Batch%20Size%20Regularization%20and%20Saving%20Models.py) |
+| Day 026 | Nov 26 | The training loop + optimizers & LR schedules | 5 optimizers compared (AdamW 97%), StepLR vs cosine | [`Day 26 - Training Loop and Optimizers.py`](./Week-04-PyTorch%20Basics/Day%2026%20-%20Training%20Loop%20and%20Optimizers.py) |
+| Day 025 | Nov 25 | PyTorch tensors, devices, autograd, Dataset & DataLoader | Autograd matches my Day 22 backprop; custom Dataset + DataLoader | [`Day 25 - PyTorch Tensors Autograd and DataLoader.py`](./Week-04-PyTorch%20Basics/Day%2025%20-%20PyTorch%20Tensors%20Autograd%20and%20DataLoader.py) |
 | Day 024 | Nov 24 | Backpropagation: my own micrograd | Autograd engine + MLP: loss 5.28 to 0.02, two moons 95% | [`Day 24 - Backpropagation and Micrograd.py`](./Week-04-PyTorch%20Basics/Day%2024%20-%20Backpropagation%20and%20Micrograd.py) |
 | Day 023 | Nov 23 | Perceptron, neurons, layers, activations | Perceptron learns AND/OR but not XOR; 2-layer net solves XOR | [`Day 23 - Perceptron Neurons and Activations.py`](./Week-04-PyTorch%20Basics/Day%2023%20-%20Perceptron%20Neurons%20and%20Activations.py) |
 | Day 022 | Nov 22 | Week 3 review + micrograd part 1 | Derivatives, computation graph, manual backprop checked numerically | [`Day 22 - Week 3 Review and Micrograd Part 1.py`](./Week-04-PyTorch%20Basics/Day%2022%20-%20Week%203%20Review%20and%20Micrograd%20Part%201.py) |
 | Day 021 | Nov 21 | 🛠️ Week 3 project | Banking intent classifier: 77 intents, 4 models compared, Linear SVM 89.4% | [`banking_intents.py`](./Week-03-Scikit-Learn%20ML/Day%2021%20-%20Banking%20Intent%20Classifier%20Project/banking_intents.py) |
-| Day 020 | Nov 20 | Classification metrics & class imbalance | Fraud detector: accuracy trap, confusion matrix, thresholds, class weights, ROC/PR curves | [`Day 20 - Classification Metrics and Class Imbalance.py`](./Week-03-Scikit-Learn%20ML/Day%2020%20-%20Classification%20Metrics%20and%20Class%20Imbalance.py) |
-| Day 019 | Nov 19 | Overfitting, bias-variance, L1/L2, cross-validation & tuning | Under/overfit plot, Ridge vs Lasso, 5-fold CV, GridSearch & RandomizedSearch | [`Day 19 - Overfitting Regularization and Cross-Validation.py`](./Week-03-Scikit-Learn%20ML/Day%2019%20-%20Overfitting%20Regularization%20and%20Cross-Validation.py) |
-| Day 018 | Nov 18 | Random forests & gradient boosting | Bagging by hand, model comparison: tree 0.917 vs boosting 0.965 | [`Day 18 - Random Forests and Gradient Boosting.py`](./Week-03-Scikit-Learn%20ML/Day%2018%20-%20Random%20Forests%20and%20Gradient%20Boosting.py) |
 
 📒 Full day-by-day history: [LOG.md](./LOG.md)
 
@@ -186,9 +186,9 @@ Click a week to see the daily topics. I tick each day off as I push it.
 - [x] **Day 22** · Sun Nov 22 · 🔁 Review Week 3 + Karpathy micrograd part 1 + label my camera frames
 - [x] **Day 23** · Mon Nov 23 · Perceptron, neurons, layers, activations (ReLU, sigmoid, softmax)
 - [x] **Day 24** · Tue Nov 24 · Forward pass & backpropagation (finish micrograd, push my version)
-- [ ] **Day 25** · Wed Nov 25 · PyTorch tensors, CPU/GPU, autograd, Dataset & DataLoader
-- [ ] **Day 26** · Thu Nov 26 · The training loop + optimizers (SGD, momentum, Adam, LR schedules)
-- [ ] **Day 27** · Fri Nov 27 · Batch size, epochs, early stopping, dropout, batchnorm, save/load, seeds
+- [x] **Day 25** · Wed Nov 25 · PyTorch tensors, CPU/GPU, autograd, Dataset & DataLoader
+- [x] **Day 26** · Thu Nov 26 · The training loop + optimizers (SGD, momentum, Adam, LR schedules)
+- [x] **Day 27** · Fri Nov 27 · Batch size, epochs, early stopping, dropout, batchnorm, save/load, seeds
 - [ ] **Day 28** · Sat Nov 28 · 🛠️ **Build:** MLP in PyTorch on Colab GPU
 
 </details>
